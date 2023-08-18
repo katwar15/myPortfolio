@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: HelveticaLT75BoldOutline;
+  src: url("../src/assets/HelveticaLT75BoldOutline.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueRegular;
+  src: url("../src/assets/HelveticaNeueRegular.otf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("../src/assets/HelveticaNeueBold.ttf");
+}
+
+:root {
+  font-family: HelveticaNeueRegular, Helvetica, Arial, sans-serif;
+  background-color: rgba(236, 227, 206, 1);
+  color: #272727;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(236, 227, 206, 1);
+}
+
+h1 {
+  font-family: HelveticaNeueBold;
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: HelveticaLT75BoldOutline;
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
