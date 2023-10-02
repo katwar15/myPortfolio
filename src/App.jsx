@@ -2,18 +2,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
-import MarqueeComponent from "./components/MaqueeComponent/MarqueeComponent";
 import MainPage from "./components/MainPage/MainPage";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
         </Routes>
-        <MarqueeComponent />
       </BrowserRouter>
       {/* <Footer /> */}
     </>

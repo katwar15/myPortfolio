@@ -1,19 +1,30 @@
+// import styles from "../style";import arrow from
+// import arrow from "/src/assets/arrow.svg";
+
 export const mainLinks = [
   {
     id: "about",
     title: "about",
+    to: "/about",
+    // styLink: styles.styLink,
   },
   {
     id: "portfolio",
     title: "portfolio",
+    to: "/portfolio",
+    // styLink: styles.styLink,
   },
   {
     id: "experience",
     title: "experience",
+    to: "/experience",
+    // styLink: styles.styLink,
   },
   {
     id: "contact",
     title: "contact",
+    to: "/contact",
+    // styLink: styles.styLink,
   },
 ];
 
@@ -21,18 +32,60 @@ export const navLinks = [
   {
     id: "about",
     title: "about",
+    to: "/about",
   },
   {
     id: "resume",
     title: "resume",
+    to: "/resume",
   },
   {
     id: "socialMedia",
     title: "social media",
+    to: "/socialmedia",
   },
   {
     id: "contact",
     title: "contact",
+    to: "/contact",
+  },
+];
+
+export const experienceLinks = [
+  {
+    id: "frontend",
+    title: "frontend",
+    rok: 2023,
+    to: "/frontend",
+    // imageUrl: `${arrow}`,
+  },
+  {
+    id: "ux/ui desing",
+    title: "desing",
+    rok: 2023,
+    to: "/desing",
+    // imageUrl: `${arrow}`,
+  },
+  {
+    id: "copywriting",
+    title: "copywriting",
+    rok: 2023,
+    to: "/copywriting",
+    // imageUrl: `${arrow}`,
+  },
+  {
+    id: "univeristy",
+    title: "univeristy",
+    rok: 2023,
+    to: "/univeristy",
+    // imageUrl: `${arrow}`,
+  },
+  {
+    id: "salon",
+    title: "salon",
+    rok: 2023,
+    to: "/salon",
+    // imageUrl: `${arrow}`,
   },
 ];
 

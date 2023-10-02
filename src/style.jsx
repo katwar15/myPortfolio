@@ -2,10 +2,10 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   heading1:
-    "font-helveticaBold font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-helveticaBold font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
 
   paragraph:
-    "font-helveticaRegular font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-helveticaRegular font-semibold xs:text-[48px] text-[40px]  xs:leading-[76.8px] leading-[66.8px] w-full",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -16,6 +16,9 @@ const styles = {
 
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
+
+  // styLink:
+  //   "font-helveticaBold flex justify-items-center uppercase pr-5 py-5 text-lg	hover:text-colorVerde",
 };
 
 export const layout = {

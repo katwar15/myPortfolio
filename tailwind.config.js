@@ -8,10 +8,12 @@ export default {
         secondary: "rgba(236, 227, 206, 1)",
         tertiary: "rgba(250, 242, 240, 1)",
         colorArancia: "rgba(242, 74, 12, 1)",
-        colorVerde: "rgba(0, 90, 47, 1)",
+        colorVerde: "rgba(4, 183, 3)",
         colorRosa: "rgba(242, 165, 190, 1)",
         colorAzzurro: "rgba(125, 205, 250, 1)",
         colorHoverPortfolio: "rgba(203, 208, 220, 1)",
+        blackP: "rgba(21, 19, 17)",
+        whiteP: "rgba(237, 237, 237)",
       },
       fontFamily: {
         helveticaOutline: [
