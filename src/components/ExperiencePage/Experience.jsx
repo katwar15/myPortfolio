@@ -1,6 +1,7 @@
 // import React from 'react';
-// import { Link } from "react-router-dom";
-// import arrow from "../../assets/arrow.svg";
+import { Link } from "react-router-dom";
+import arrow from "../../assets/arrow.svg";
+
 // import { experienceLinks } from "../../constants/index.jsx";
 import "./Experience.scss";
 
@@ -21,22 +22,50 @@ const Experience = () => {
       </div>
 
       <div className="gridExperience">
-        <div id="item-0"></div>
+        <div id="item-0">
+          {/* <img className="imgExpe" src={square1}></img> */}
+        </div>
 
-        <div id="item-1"></div>
+        <div id="item-1">
+          <Link className="linkExpo">
+            <h1 className="h1_Grid">experience</h1>
 
-        <div id="item-2"></div>
+            <img className="arrow" src={arrow}></img>
+          </Link>
+        </div>
+
+        <div id="item-2">
+          <Link className="linkExpo">
+            <h1 className="h1_Grid">experience</h1>
+            <img className="arrow" src={arrow}></img>
+          </Link>
+        </div>
 
         <div id="item-3"></div>
         <div id="item-4"></div>
         <div id="item-5"></div>
-        <div id="item-6"></div>
+        <div id="item-6">
+          <Link className="linkExpo">
+            <h1 className="h1_Grid">experience</h1>
+            <img className="arrow" src={arrow}></img>
+          </Link>
+        </div>
 
-        <div id="item-7"></div>
+        <div id="item-7">
+          <Link className="linkExpo">
+            <h1 className="h1_Grid">experience</h1>
+            <img className="arrow" src={arrow}></img>
+          </Link>
+        </div>
         <div id="item-8"></div>
         <div id="item-9"></div>
         <div id="item-10"></div>
-        <div id="item-11"></div>
+        <div id="item-11">
+          <Link className="linkExpo">
+            <h1 className="h1_Grid">experience</h1>
+            <img className="arrow" src={arrow}></img>
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -59,9 +59,9 @@ const Portfolio = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-
+      <div className="black_Line"></div>
       <div className="container_portfolioGroup">
-        {portfolioLinks.map((proto) => (
+        {portfolioLinks.map((proto, index) => (
           <>
             <Link
               className="link"
@@ -71,16 +71,28 @@ const Portfolio = () => {
               onMouseLeave={(e) => {
                 manageMouseLeave(e, proto.color2);
               }}
-              key={proto.index}
+              key={index.id}
+              to={proto.to}
             >
-              <div className="black_Line"></div>
               <div className="grid_Portfolio">
                 <h1 className="h1_Grid">{proto.title}</h1>
 
                 <div className="containerImages">
-                  <div ref={(el) => (d1 = el)} className="black_Div"></div>
-                  <div ref={(el) => (d2 = el)} className="black_Div"></div>
-                  <div ref={(el) => (d3 = el)} className="black_Div"></div>
+                  <img
+                    src={proto.protoImg}
+                    ref={(el) => (d1 = el)}
+                    className="black_Div"
+                  ></img>
+                  <img
+                    src={proto.protoImg2}
+                    ref={(el) => (d2 = el)}
+                    className="black_Div"
+                  ></img>
+                  <img
+                    src={proto.protoImg3}
+                    ref={(el) => (d3 = el)}
+                    className="black_Div"
+                  ></img>
                 </div>
               </div>
             </Link>

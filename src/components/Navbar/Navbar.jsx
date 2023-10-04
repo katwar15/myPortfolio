@@ -18,7 +18,7 @@ const Navbar = () => {
             {mainLinks.map((e, index) => (
               <li key={e.id}>
                 <Link
-                  className={`font-helveticaBold cursor-pointer text-blackP flex justify-items-center uppercase pr-5 py-5 text-lg	hover:text-colorVerde ${
+                  className={`font-helveticaBold cursor-pointer text-blackP flex justify-items-center uppercase pr-5 py-5 text-lg transition duration-500 ease-in-out	hover:text-colorVerde  ${
                     index === mainLinks.length - 1 ? "mr-0" : "mr-10"
                   }`}
                   to={e.to}
