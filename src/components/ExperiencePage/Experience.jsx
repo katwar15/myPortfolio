@@ -1,14 +1,15 @@
 // import React from 'react';
-import { Link } from "react-router-dom";
-import arrow from "../../assets/arrow.svg";
-import { experienceLinks } from "../../constants/index.jsx";
+// import { Link } from "react-router-dom";
+// import arrow from "../../assets/arrow.svg";
+// import { experienceLinks } from "../../constants/index.jsx";
+import "./Experience.scss";
 
 const Experience = () => {
   return (
     <>
-      <div className="flex flex-col justify-between items-start px-14 mx-14 pt-10">
-        <h1 className="text-blackP pb-5">Experience</h1>
-        <p className=" text-blackP text-2xl	 pr-56 pb-14">
+      <div className="experienceDiv">
+        <h1 className="h1_experience">Experience</h1>
+        <p className="p_experience">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,49 +20,23 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="flex flex-col pt-2">
-        <div className="w-full h-0.5 bg-blackP"></div>
-        {experienceLinks.map((e) => (
-          <>
-            <Link key={e.id} to={e.to} className="w-full  hover:bg-colorVerde">
-              <div className="  h-20  grid grid-rows-1 grid-cols-3  px-14 mx-14 ">
-                <h1 className="text-blackP self-center text-4xl	justify-self-start">
-                  {e.title}
-                </h1>
-                <h1 className="text-blackP self-center	text-4xl justify-self-end">
-                  {e.rok}
-                </h1>
+      <div className="gridExperience">
+        <div id="item-0"></div>
 
-                <img className="self-center justify-self-end	" src={arrow}></img>
-              </div>
-            </Link>
-            <div className="w-full h-0.5 bg-blackP"></div>
-          </>
-        ))}
-      </div>
+        <div id="item-1"></div>
 
-      <div className="flex flex-col pt-2">
-        <div className="w-full h-0.5 bg-blackP"></div>
-        {experienceLinks.map((e) => (
-          <>
-            <Link key={e.id} to={e.to} className="w-full  hover:bg-colorVerde">
-              <div className="  h-20  grid grid-rows-1 grid-cols-3  px-14 mx-14 ">
-                <h1 className="text-blackP font-helveticaOutline  self-center text-4xl	justify-self-start">
-                  {e.title}
-                </h1>
-                <h1 className="text-blackP font-helveticaOutline self-center	text-4xl justify-self-end">
-                  {e.rok}
-                </h1>
+        <div id="item-2"></div>
 
-                <img
-                  className="self-center justify-self-end	"
-                  src={e.imageUrl}
-                ></img>
-              </div>
-            </Link>
-            <div className="w-full h-0.5 bg-blackP"></div>
-          </>
-        ))}
+        <div id="item-3"></div>
+        <div id="item-4"></div>
+        <div id="item-5"></div>
+        <div id="item-6"></div>
+
+        <div id="item-7"></div>
+        <div id="item-8"></div>
+        <div id="item-9"></div>
+        <div id="item-10"></div>
+        <div id="item-11"></div>
       </div>
     </>
   );

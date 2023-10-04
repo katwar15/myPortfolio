@@ -1,5 +1,6 @@
 // import styles from "../style";import arrow from
-// import arrow from "/src/assets/arrow.svg";
+import arrow from "/src/assets/arrow.svg";
+import logo from "/src/assets/logo.png";
 
 export const mainLinks = [
   {
@@ -57,28 +58,28 @@ export const experienceLinks = [
     title: "frontend",
     rok: 2023,
     to: "/frontend",
-    // imageUrl: `${arrow}`,
+    imageUrl: `${arrow}`,
   },
   {
     id: "ux/ui desing",
     title: "desing",
     rok: 2023,
     to: "/desing",
-    // imageUrl: `${arrow}`,
+    imageUrl: `${arrow}`,
   },
   {
     id: "copywriting",
     title: "copywriting",
     rok: 2023,
     to: "/copywriting",
-    // imageUrl: `${arrow}`,
+    imageUrl: `${arrow}`,
   },
   {
     id: "univeristy",
     title: "univeristy",
     rok: 2023,
     to: "/univeristy",
-    // imageUrl: `${arrow}`,
+    imageUrl: `${arrow}`,
   },
   {
     id: "salon",
@@ -86,6 +87,69 @@ export const experienceLinks = [
     rok: 2023,
     to: "/salon",
     // imageUrl: `${arrow}`,
+  },
+];
+
+export const portfolioLinks = [
+  {
+    id: "github",
+    title: "github",
+    to: "/https://github.com/katwar15",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
+  },
+  {
+    id: "behance",
+    title: "behance",
+    to: "/https://www.behance.net/katarzynawarmuz",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
+  },
+  {
+    id: "pole",
+    title: "pole. dwumiesięcznik",
+    to: "/poledwumiesiecznik.pl",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
+  },
+  {
+    id: "email",
+    title: "email design",
+    to: "/emaildesign",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
+  },
+  {
+    id: "malyFormat",
+    title: "Mały Format",
+    to: "/malyformat",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
+  },
+  {
+    id: "spokoj",
+    title: "Własny $pokój",
+    to: "/wlasnyspokoj",
+    imageUrl: `${logo}`,
+    imageUrl2: `${logo}`,
+    imageUrl3: `${logo}`,
+    color: "#ffffff",
+    color2: "transparent",
   },
 ];
 
