@@ -3,14 +3,14 @@
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-between items-start px-14 mx-14 pt-10">
+      <div className="flex flex-col justify-between items-start px-14 mx-14 pt-10 ">
         <div className="flex flex-col ">
           <h1 className="text-7xl text-blackP">katarzyna </h1>
           <h1 className="text-7xl text-blackP pb-5"> warmuz</h1>
         </div>
       </div>
 
-      <div className="w-full h-0.5 bg-blackP"></div>
+      <div className="w-full h-px bg-blackP"></div>
 
       <div className="flex flex-col justify-between items-start px-14 mx-14 pb-10">
         <div className="flex">

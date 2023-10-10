@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex justify-between items-center py-6 navbar">
       <div className="container flex justify-between items-center mx-14 px-14 md:px-14 lg:24px">
-        <img src={logo} alt="logo" className="w-20 h-20 z-40"></img>
+        <img src={logo} alt="logo" className="w-20 h-20 z-40 mr-5"></img>
         <div className=" md:flex space-x-12 items-center">
           {/* better make hidden on smaller device and then establish that on larger divices navbar is not hidden */}
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -30,12 +30,12 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center ">
+        <div className="sm:hidden flex flex-1 justify-end items-center w-full">
           {toggle ? (
             <button
               alt="menu"
               onClick={() => setToggle((prev) => !prev)}
-              className="border-2 border-blackP font-helveticaBold cursor-pointer flex justify-items-center align-center uppercase p-1 text-lg center"
+              className="border-2 border-blackP font-helveticaBold cursor-pointer flex justify-items-center align-center uppercase p-1 text-xl center"
             >
               menu
             </button>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <button
               alt="menu"
               onClick={() => setToggle((prev) => !prev)}
-              className="border-2 border-blackP font-helveticaBold cursor-pointer flex justify-items-center align-center uppercase p-1 text-lg center"
+              className="border-2 border-blackP font-helveticaBold cursor-pointer flex justify-items-center align-center uppercase p-1 text-xl center"
             >
               close
             </button>
@@ -51,13 +51,13 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "hidden" : "flex"
-            } bg-whiteP p-6 absolute top-20 right-0 flex flex-col my-2 min-w-] w-full sidebar`}
+            } bg-whiteP h-vh pt-20 pb-12 absolute top-20 right-0 flex flex-col my-2 min-w-] w-full sidebar`}
           >
-            <ul className="list-none flex flex-col justify-center justify-items-center  items-center flex-1">
+            <ul className="list-none flex flex-col justify-start justify-items-start  items-start flex-1">
               {mainLinks.map((e, index) => (
                 <li key={e.id}>
                   <Link
-                    className={`font-helveticaBold cursor-pointer flex uppercase pr-5 py-5 text-lg	hover:text-colorVerde ${
+                    className={`font-helveticaBold cursor-pointer flex uppercase pr-5 pl-14 ml-14  py-5 text-5xl	hover:text-colorVerde ${
                       index === mainLinks.length - 1 ? "mr-0" : "mb-4"
                     }`}
                     to={e.to}

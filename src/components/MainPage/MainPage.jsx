@@ -7,6 +7,7 @@ import Portfolio from "../PortfolioPage/Portfolio";
 import MarqueeComponent from "../MaqueeComponent/MarqueeComponent";
 import Hero from "./Hero";
 import VideoComponent from "../VideoComponent/VideoComponent";
+// import List from "../ListPage/List";
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
       <VideoComponent />
       <Hero />
       <MarqueeComponent />
+      {/* <List /> */}
       <Portfolio />
       <Experience />
     </>

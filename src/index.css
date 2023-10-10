@@ -17,6 +17,11 @@
   src: url("../src/assets/HelveticaNeueBold.ttf");
 }
 
+@font-face {
+  font-family: HelveticaLightNormal;
+  src: url("../src/assets/HelveticaLightNormal.ttf");
+}
+
 :root {
   font-family: HelveticaNeueRegular, Helvetica, Arial, sans-serif;
   background-color: #ededed;

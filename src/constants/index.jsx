@@ -1,6 +1,7 @@
 // import styles from "../style";import arrow from
 import arrow from "/src/assets/arrow.svg";
-import logo from "../assets/logo.png";
+
+import logo from "/src/assets/logo.png";
 
 export const mainLinks = [
   {
@@ -94,62 +95,51 @@ export const portfolioLinks = [
   {
     id: "github",
     title: "github",
+    subtitle: "design",
     to: "/https://github.com/katwar15",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
-    color: "#ffffff",
-    color2: "transparent",
+    src: `${logo}`,
+    color: "#21262D",
   },
   {
     id: "behance",
     title: "behance",
+    subtitle: "design",
     to: "/https://www.behance.net/katarzynawarmuz",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
-    color: "#ffffff",
-    color2: "transparent",
+    src: `${logo}`,
+    color: "#053EFF",
   },
   {
     id: "pole",
     title: "pole. dwumiesięcznik",
+    subtitle: "design",
     to: "/poledwumiesiecznik.pl",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
-    color: "#ffffff",
-    color2: "transparent",
+    src: `${logo}`,
+    color: "#D32027",
   },
   {
     id: "email",
     title: "email design",
+    subtitle: "design",
     to: "/emaildesign",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
-    color: "#ffffff",
-    color2: "transparent",
+    src: `${logo}`,
+    color: "#F5F5F5",
   },
   {
     id: "malyFormat",
     title: "Mały Format",
+    subtitle: "design",
+
     to: "/malyformat",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
+    src: `${logo}`,
     color: "#ffffff",
-    color2: "transparent",
   },
   {
     id: "spokoj",
     title: "Własny $pokój",
+    subtitle: "design",
     to: "/wlasnyspokoj",
-    protoImg: `${logo}`,
-    protoImg2: `${logo}`,
-    protoImg3: `${logo}`,
-    color: "#ffffff",
-    color2: "transparent",
+    src: `${logo}`,
+    color: "#E4BCB4",
   },
 ];
 

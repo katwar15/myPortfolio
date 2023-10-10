@@ -29,6 +29,7 @@ const Experience = () => {
         <div id="item-1">
           <Link className="linkExpo">
             <h1 className="h1_Grid">experience</h1>
+            <h1 className="h1_Grid">rok</h1>
 
             <img className="arrow" src={arrow}></img>
           </Link>
@@ -37,6 +38,8 @@ const Experience = () => {
         <div id="item-2">
           <Link className="linkExpo">
             <h1 className="h1_Grid">experience</h1>
+            <h1 className="h1_Grid">rok</h1>
+
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
@@ -47,6 +50,8 @@ const Experience = () => {
         <div id="item-6">
           <Link className="linkExpo">
             <h1 className="h1_Grid">experience</h1>
+            <h1 className="h1_Grid">rok</h1>
+
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
@@ -54,6 +59,8 @@ const Experience = () => {
         <div id="item-7">
           <Link className="linkExpo">
             <h1 className="h1_Grid">experience</h1>
+            <h1 className="h1_Grid">rok</h1>
+
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
@@ -63,6 +70,7 @@ const Experience = () => {
         <div id="item-11">
           <Link className="linkExpo">
             <h1 className="h1_Grid">experience</h1>
+            <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
