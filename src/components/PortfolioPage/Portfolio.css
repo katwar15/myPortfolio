@@ -42,12 +42,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 3.5rem /* 56px */;
-  padding-right: 3.5rem /* 56px */;
-  margin-left: 3.5rem /* 56px */;
-  margin-right: 3.5rem /* 56px */;
+  margin-left: 7rem /* 56px */;
+  margin-right: 7rem /* 56px */;
   padding-top: 7rem;
-  padding-bottom: 10rem;
+  padding-left: 7rem /* 56px */;
+  padding-right: 7rem /* 56px */;
 }
 
 .columnContainer {

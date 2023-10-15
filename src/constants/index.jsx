@@ -205,31 +205,25 @@ export const marqueAdje = [
 
 export const hopsaImages = [
   {
-    name: "kat",
-    client: "client",
-    description: "pitu pitu na badylu",
+    job: "frontend",
     src: `${pole}`,
-    year: 2022,
+    years: 2022,
   },
   {
-    name: "kat",
-    client: "client",
-    description: "pitu pitu na badylu",
+    job: "ux/ui design",
+
     src: `${email}`,
-    year: 2022,
+    years: 2022,
   },
   {
-    name: "kat",
-    client: "client",
-    description: "pitu pitu na badylu",
+    job: "CRM",
+
     src: `${format}`,
-    year: 2022,
+    years: 2022,
   },
   {
-    name: "kat",
-    client: "client",
-    description: "pitu pitu na badylu",
+    job: "copywriting",
     src: `${spokoj}`,
-    year: 2022,
+    years: 2022,
   },
 ];
