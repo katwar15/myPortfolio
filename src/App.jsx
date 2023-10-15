@@ -2,8 +2,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import AboutPage from "./components/AboutComponent/About";
+import Experience from "./components/ExperiencePage/Experience";
+import Footer from "./components/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
 import Navbar from "./components/Navbar/Navbar";
+import Portfolio from "./components/PortfolioPage/Portfolio";
 
 function App() {
   return (
@@ -12,7 +16,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
       {/* <Footer /> */}
     </>

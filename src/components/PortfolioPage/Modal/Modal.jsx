@@ -1,21 +1,21 @@
-import "./Modal.scss";
+import "./Modal.css";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
 const scaleAnimation = {
-  initial: { scale: 0, x: "-50%", y: "-50%" },
+  initial: { scale: 0, x: "-10%", y: "20%" },
   enter: {
     scale: 1,
     x: "-50%",
-    y: "-50%",
+    y: "90%",
     transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
   },
 
   closed: {
     scale: 0,
     x: "-50%",
-    y: "-50%",
+    y: "90%",
     transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] },
   },
 };
@@ -61,7 +61,7 @@ const Modal = ({ modal, portfolioLinks }) => {
             >
               <img
                 src={src}
-                width={300}
+                width={250}
                 height={0}
                 alt="image"
                 className="modalImg"

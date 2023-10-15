@@ -1,0 +1,35 @@
+.containerHopsa {
+  margin-top: 20vh;
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.h1_hopsa {
+  font-size: 3rem /* 24px */;
+  color: rgba(21, 19, 17);
+  padding-bottom: 1.25rem /* 20px */;
+}
+
+.dublaz {
+  display: flex;
+  margin-top: 10vh;
+  height: 45vw;
+}
+
+.dublazGallery:nth-of-type(1) {
+  width: 66.66%;
+}
+
+.dublazGallery:nth-of-type(2) {
+  width: 33.33%;
+}
+
+.dublazFonda {
+  padding-bottom: 66.66%;
+  position: relative;
+}
+
+.dublazImg {
+  width: 100%;
+}

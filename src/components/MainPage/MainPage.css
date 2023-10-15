@@ -1,0 +1,18 @@
+.mainPage {
+  position: relative;
+  top: 18vh;
+}
+
+@media screen and (max-width: 768px) {
+  .mainPage {
+    top: 15vh;
+  }
+}
+
+/* for small devices */
+
+@media screen and (max-width: 500px) {
+  .mainPage {
+    top: 10vh;
+  }
+}

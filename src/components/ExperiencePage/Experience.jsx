@@ -1,9 +1,7 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
 import arrow from "../../assets/arrow.svg";
-
-// import { experienceLinks } from "../../constants/index.jsx";
-import "./Experience.scss";
+import "./Experience.css";
 
 const Experience = () => {
   return (

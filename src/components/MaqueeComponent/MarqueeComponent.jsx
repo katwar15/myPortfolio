@@ -5,7 +5,7 @@ import styles from "../../style";
 const MarqueeComponent = () => {
   return (
     <>
-      <div className="w-full py-10">
+      <div className=" relative w-full py-10">
         <Marquee
           gradient={false}
           direction={"left"}

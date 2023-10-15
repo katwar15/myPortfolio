@@ -1,8 +1,10 @@
-import "./Portfolio.scss";
+import { Link } from "react-router-dom";
+import "./Portfolio.css";
 
-const Column = ({ index, title, subtitle, setModal }) => {
+const Column = ({ index, title, subtitle, setModal, to }) => {
   return (
-    <div
+    <Link
+      to={to}
       onMouseEnter={() => {
         setModal({ active: true, index });
       }}
@@ -13,7 +15,7 @@ const Column = ({ index, title, subtitle, setModal }) => {
     >
       <h1>{title}</h1>
       <p>{subtitle}</p>
-    </div>
+    </Link>
   );
 };
 

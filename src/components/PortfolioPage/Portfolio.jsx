@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { portfolioLinks } from "../../constants/index.jsx";
 import Column from "./Column.jsx";
-import "./Portfolio.scss";
+import "./Portfolio.css";
 import Modal from "./Modal/Modal.jsx";
 
 const Portfolio = () => {
@@ -26,6 +26,7 @@ const Portfolio = () => {
         {portfolioLinks.map((project, index) => {
           return (
             <Column
+              to={project.to}
               index={index}
               title={project.title}
               subtitle={project.subtitle}

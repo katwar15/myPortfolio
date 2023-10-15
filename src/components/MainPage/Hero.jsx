@@ -1,29 +1,35 @@
-// import kasiulec from "../../assets/imageOfMyself.png";
+import "./Hero.css";
+import background from "../../assets/background.mp4";
 
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-between items-start px-14 mx-14 pt-10 ">
+      <video src={background} autoPlay className="video"></video>
+      <div className="containerName">
         <div className="flex flex-col ">
-          <h1 className="text-7xl text-blackP">katarzyna </h1>
-          <h1 className="text-7xl text-blackP pb-5"> warmuz</h1>
+          <h1 className="h1Name ">katarzyna </h1>
+          <h1 className="h1Name"> warmuz</h1>
+        </div>
+        <div className="containerUI">
+          <h2 className="h2Outline">ui / ux</h2>
+          <h2 className="h2HelveticaBold">designer</h2>
+        </div>
+        <div className="containerUI">
+          <h2 className="h2HelveticaBold">frontend</h2>
+          <h2 className="h2Outline">developer</h2>
         </div>
       </div>
 
-      <div className="w-full h-px bg-blackP"></div>
-
-      <div className="flex flex-col justify-between items-start px-14 mx-14 pb-10">
-        <div className="flex">
-          <h2 className="pr-2 text-2xl text-blackP">ui / ux</h2>
-          <h2 className="font-helveticaBold text-2xl text-blackP">designer</h2>
+      {/* <div className="containerRole">
+        <div className="containerUI">
+          <h2 className="h2Outline">ui / ux</h2>
+          <h2 className="h2HelveticaBold">designer</h2>
         </div>
-        <div className="flex">
-          <h2 className="font-helveticaBold pr-2 text-2xl text-blackP">
-            frontend
-          </h2>
-          <h2 className="text-2xl text-blackP">developer</h2>
+        <div className="containerUI">
+          <h2 className="h2HelveticaBold">frontend</h2>
+          <h2 className="h2Outline">developer</h2>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,0 +1,142 @@
+.containerName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 3.5rem /* 56px */;
+  padding-right: 3.5rem /* 56px */;
+  margin-left: 3.5rem /* 56px */;
+  margin-right: 3.5rem /* 56px */;
+  padding-top: 2.5rem /* 40px */;
+  position: absolute;
+  top: 40vh;
+  z-index: 1;
+}
+
+.containerRole {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 3.5rem /* 56px */;
+  padding-right: 3.5rem /* 56px */;
+  margin-left: 3.5rem /* 56px */;
+  margin-right: 3.5rem /* 56px */;
+  padding-bottom: 2.5rem /* 40px */;
+  padding-top: 1rem;
+  position: absolute;
+  top: 40vh;
+  z-index: 1;
+}
+
+.containerUI {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.h1Name {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #04b703;
+}
+
+.h2Outline {
+  padding-right: 0.5rem /* 8px */;
+  color: rgba(21, 19, 17);
+  font-size: 1.5rem;
+}
+
+.h2HelveticaBold {
+  padding-right: 0.5rem /* 8px */;
+  color: rgba(21, 19, 17);
+  font-size: 1.5rem;
+  font-family: HelveticaNeueBold, Helvetica, Arial, sans-serif;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* BREAKPOINTS */
+
+/* for medium devices */
+@media screen and (max-width: 768px) {
+  .containerName {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin: 0;
+
+    padding-top: 1rem /* 40px */;
+  }
+
+  .containerRole {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin: 0;
+
+    padding-bottom: 2.5rem /* 40px */;
+  }
+
+  .containerUI {
+    display: flex;
+  }
+
+  .h1Name {
+    font-size: 2.5rem;
+  }
+
+  .h2Outline {
+    color: rgba(21, 19, 17);
+    font-size: 1rem;
+  }
+
+  .h2HelveticaBold {
+    color: rgba(21, 19, 17);
+    font-size: 1rem;
+    font-family: HelveticaNeueBold, Helvetica, Arial, sans-serif;
+  }
+
+  .video {
+    top: 15vh;
+  }
+}
+
+/* for small devices */
+
+@media screen and (max-width: 350px) {
+  .containerName {
+    padding-left: 1rem /* 56px */;
+    padding-top: 1rem /* 40px */;
+    margin: 0;
+  }
+
+  .containerRole {
+    padding-left: 0.75rem /* 56px */;
+    padding-bottom: 1.5rem /* 40px */;
+    margin: 0;
+  }
+
+  .containerUI {
+    display: flex;
+  }
+
+  .h1Name {
+    font-size: 1.5rem;
+  }
+
+  .h2Outline {
+    color: rgba(21, 19, 17);
+    font-size: 0.75rem;
+  }
+
+  .h2HelveticaBold {
+    color: rgba(21, 19, 17);
+    font-size: 0.75rem;
+    font-family: HelveticaNeueBold, Helvetica, Arial, sans-serif;
+  }
+  .video {
+    top: 10vh;
+  }
+}

@@ -1,32 +1,33 @@
 // import styles from "../style";import arrow from
-import arrow from "/src/assets/arrow.svg";
 
-import logo from "/src/assets/logo.png";
+// import logo from "/src/assets/logo.png";
+import behance from "/src/assets/behance.png";
+import pole from "/src/assets/pole.png";
+import email from "/src/assets/email.png";
+import spokoj from "/src/assets/spokoj.png";
+import format from "/src/assets/format.png";
+import github from "/src/assets/github.png";
 
 export const mainLinks = [
   {
     id: "about",
     title: "about",
     to: "/about",
-    // styLink: styles.styLink,
   },
   {
     id: "portfolio",
     title: "portfolio",
     to: "/portfolio",
-    // styLink: styles.styLink,
   },
   {
     id: "experience",
     title: "experience",
     to: "/experience",
-    // styLink: styles.styLink,
   },
   {
     id: "contact",
     title: "contact",
     to: "/contact",
-    // styLink: styles.styLink,
   },
 ];
 
@@ -59,61 +60,40 @@ export const experienceLinks = [
     title: "frontend",
     rok: 2023,
     to: "/frontend",
-    imageUrl: `${arrow}`,
   },
   {
     id: "ux/ui desing",
     title: "desing",
     rok: 2023,
     to: "/desing",
-    imageUrl: `${arrow}`,
   },
   {
     id: "copywriting",
     title: "copywriting",
     rok: 2023,
     to: "/copywriting",
-    imageUrl: `${arrow}`,
   },
   {
     id: "univeristy",
     title: "univeristy",
     rok: 2023,
     to: "/univeristy",
-    imageUrl: `${arrow}`,
   },
   {
     id: "salon",
     title: "salon",
     rok: 2023,
     to: "/salon",
-    // imageUrl: `${arrow}`,
   },
 ];
 
 export const portfolioLinks = [
   {
-    id: "github",
-    title: "github",
-    subtitle: "design",
-    to: "/https://github.com/katwar15",
-    src: `${logo}`,
-    color: "#21262D",
-  },
-  {
-    id: "behance",
-    title: "behance",
-    subtitle: "design",
-    to: "/https://www.behance.net/katarzynawarmuz",
-    src: `${logo}`,
-    color: "#053EFF",
-  },
-  {
     id: "pole",
     title: "pole. dwumiesięcznik",
     subtitle: "design",
     to: "/poledwumiesiecznik.pl",
-    src: `${logo}`,
+    src: `${pole}`,
     color: "#D32027",
   },
   {
@@ -121,7 +101,7 @@ export const portfolioLinks = [
     title: "email design",
     subtitle: "design",
     to: "/emaildesign",
-    src: `${logo}`,
+    src: `${email}`,
     color: "#F5F5F5",
   },
   {
@@ -130,7 +110,7 @@ export const portfolioLinks = [
     subtitle: "design",
 
     to: "/malyformat",
-    src: `${logo}`,
+    src: `${format}`,
     color: "#ffffff",
   },
   {
@@ -138,8 +118,24 @@ export const portfolioLinks = [
     title: "Własny $pokój",
     subtitle: "design",
     to: "/wlasnyspokoj",
-    src: `${logo}`,
+    src: `${spokoj}`,
     color: "#E4BCB4",
+  },
+  {
+    id: "github",
+    title: "github",
+    subtitle: "design",
+    to: "/https://github.com/katwar15",
+    src: `${github}`,
+    color: "#21262D",
+  },
+  {
+    id: "behance",
+    title: "behance",
+    subtitle: "design",
+    to: "/https://www.behance.net/katarzynawarmuz",
+    src: `${behance}`,
+    color: "#053EFF",
   },
 ];
 
@@ -204,5 +200,36 @@ export const marqueAdje = [
   {
     id: "soft-skill",
     title: "also jazz lover",
+  },
+];
+
+export const hopsaImages = [
+  {
+    name: "kat",
+    client: "client",
+    description: "pitu pitu na badylu",
+    src: `${pole}`,
+    year: 2022,
+  },
+  {
+    name: "kat",
+    client: "client",
+    description: "pitu pitu na badylu",
+    src: `${email}`,
+    year: 2022,
+  },
+  {
+    name: "kat",
+    client: "client",
+    description: "pitu pitu na badylu",
+    src: `${format}`,
+    year: 2022,
+  },
+  {
+    name: "kat",
+    client: "client",
+    description: "pitu pitu na badylu",
+    src: `${spokoj}`,
+    year: 2022,
   },
 ];

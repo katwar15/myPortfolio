@@ -1,0 +1,114 @@
+.containerJob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 3.5rem /* 56px */;
+  padding-right: 3.5rem /* 56px */;
+  margin-left: 3.5rem /* 56px */;
+  margin-right: 3.5rem /* 56px */;
+  padding-top: 8rem /* 192px */;
+  padding-bottom: 8rem /* 192px */;
+
+  top: 4rem;
+  position: relative;
+}
+
+.h1Job {
+  font-size: 4rem /* 24px */;
+  color: rgba(21, 19, 17);
+  padding-bottom: 4rem /* 20px */;
+}
+
+.h2Job {
+  font-size: 2rem /* 24px */;
+  font-family: HelveticaNeueBold, Helvetica, Arial, sans-serif;
+  color: rgba(21, 19, 17);
+  padding-top: 6rem;
+  padding-bottom: 2rem /* 20px */;
+}
+
+.pJob {
+  color: rgba(21, 19, 17);
+  font-size: 1.25rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  padding-bottom: 4rem /* 56px */;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.imageJob {
+  width: 100%;
+}
+
+.imagesJob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.imgJob {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .containerJob {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin: 0;
+    padding-bottom: 6rem /* 192px */;
+  }
+
+  .h1Job {
+    font-size: 2rem /* 24px */;
+    padding-bottom: 1.25rem /* 20px */;
+  }
+  .h2Job {
+    font-size: 1rem /* 24px */;
+
+    padding-top: 3rem;
+    padding-bottom: 2rem /* 20px */;
+  }
+  .pJob {
+    font-size: 1rem /* 24px */;
+    padding-bottom: 2rem /* 56px */;
+  }
+}
+
+/* for small devices */
+
+@media screen and (max-width: 500px) {
+  .containerJob {
+    padding-left: 1rem /* 56px */;
+    padding-top: 1rem /* 40px */;
+    margin: 0;
+    padding-bottom: 4rem /* 192px */;
+  }
+
+  .h1Job {
+    font-size: 2rem /* 24px */;
+    padding-bottom: 1.25rem /* 20px */;
+  }
+  .h2Job {
+    font-size: 1.75rem /* 24px */;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2rem /* 20px */;
+  }
+  .pJob {
+    font-size: 1rem /* 24px */;
+    padding-bottom: 2rem /* 56px */;
+  }
+
+  .imagesJob {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .imgJob {
+    width: 1000%;
+  }
+}
