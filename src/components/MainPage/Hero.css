@@ -8,9 +8,8 @@
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-top: 2.5rem /* 40px */;
-  position: absolute;
   top: 40vh;
-  z-index: 1;
+  padding-bottom: 15rem;
 }
 
 .containerRole {

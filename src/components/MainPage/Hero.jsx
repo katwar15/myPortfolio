@@ -1,10 +1,8 @@
 import "./Hero.css";
-import background from "../../assets/background.mp4";
 
 const Hero = () => {
   return (
     <>
-      <video src={background} autoPlay className="video"></video>
       <div className="containerName">
         <div className="flex flex-col ">
           <h1 className="h1Name ">katarzyna </h1>

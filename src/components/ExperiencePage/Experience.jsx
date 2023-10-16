@@ -1,6 +1,11 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
 import arrow from "../../assets/arrow.svg";
+import MovieClipOne from "../MovieClips/MovieClipOne";
+import MovieClipTwo from "../MovieClips/MovieClipTwo";
+import MovieClipThree from "../MovieClips/MovieClipThree";
+import MovieClipFour from "../MovieClips/MovieClipFour";
+
 import "./Experience.css";
 
 const Experience = () => {
@@ -21,7 +26,7 @@ const Experience = () => {
 
       <div className="gridExperience">
         <div id="item-0">
-          {/* <img className="imgExpe" src={square1}></img> */}
+          <MovieClipFour />
         </div>
 
         <div id="item-1">
@@ -43,7 +48,9 @@ const Experience = () => {
         </div>
 
         <div id="item-3"></div>
-        <div id="item-4"></div>
+        <div id="item-4">
+          <MovieClipOne />
+        </div>
         <div id="item-5"></div>
         <div id="item-6">
           <Link className="linkExpo">
@@ -62,8 +69,12 @@ const Experience = () => {
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
-        <div id="item-8"></div>
-        <div id="item-9"></div>
+        <div id="item-8">
+          <MovieClipThree />
+        </div>
+        <div id="item-9">
+          <MovieClipTwo />
+        </div>
         <div id="item-10"></div>
         <div id="item-11">
           <Link className="linkExpo">

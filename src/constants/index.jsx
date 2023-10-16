@@ -143,63 +143,77 @@ export const marqueAdje = [
   {
     id: "skill",
     title: "figma",
+    src: `${email}`,
   },
 
   {
     id: "soft-skill",
     title: "ux thinking",
+    src: `${email}`,
   },
   {
     id: "skill",
     title: "vanilla js",
+    src: `${email}`,
   },
   {
     id: "soft-skill",
     title: "intuition",
+    src: `${email}`,
   },
   {
     id: "skill",
     title: "react js",
+    src: `${email}`,
   },
 
   {
     id: "soft-skill",
     title: "multitasking",
+    src: `${email}`,
   },
 
   {
     id: "skill",
     title: "html & css",
+    src: `${email}`,
   },
   {
     id: "soft-skill",
     title: "team player",
+    src: `${email}`,
   },
 
   {
     id: "skill",
     title: "typescript",
+    src: `${email}`,
   },
   {
     id: "soft-skill",
     title: "creativity",
+    src: `${email}`,
   },
 
   {
     id: "skill",
     title: "Knowledge of HTPP and Rest API",
+    src: `${email}`,
   },
   {
     id: "soft-skill",
     title: "Empathy",
+    src: `${email}`,
   },
   {
     id: "skill",
     title: "Knowledge of W3C and WCAG standards",
+    src: `${email}`,
   },
   {
     id: "soft-skill",
     title: "also jazz lover",
+    src: `${email}`,
   },
 ];
 

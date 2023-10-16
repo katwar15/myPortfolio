@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import AboutPage from "./components/AboutComponent/About";
+// import Cursor from "./components/Cursor/Cursor";
 import Experience from "./components/ExperiencePage/Experience";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
@@ -14,6 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
+        {/* <Cursor /> */}
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/portfolio" element={<Portfolio />} />

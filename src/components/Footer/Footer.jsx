@@ -27,11 +27,9 @@ const Footer = () => {
             <a href="https://github.com/katwar15">
               <FaGithub className="iconS" />
             </a>
-
             <a href="https://www.behance.net/katarzynawarmuz">
               <FaBehanceSquare className="iconS" />
             </a>
-
             <a href="https://www.linkedin.com/in/katarzyna-warmuz-631364230/">
               <FaLinkedin className="iconS" />
             </a>
