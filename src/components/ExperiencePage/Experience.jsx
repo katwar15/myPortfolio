@@ -5,10 +5,9 @@ import MovieClipOne from "../MovieClips/MovieClipOne";
 import MovieClipTwo from "../MovieClips/MovieClipTwo";
 import MovieClipThree from "../MovieClips/MovieClipThree";
 import MovieClipFour from "../MovieClips/MovieClipFour";
-
 import "./Experience.css";
 
-const Experience = () => {
+const Experience = ({ experienceLinks }) => {
   return (
     <>
       <div className="experienceDiv">
@@ -26,58 +25,54 @@ const Experience = () => {
 
       <div className="gridExperience">
         <div id="item-0">
-          <MovieClipFour />
+          <MovieClipFour className="movieClip" />
         </div>
 
         <div id="item-1">
-          <Link className="linkExpo">
+          <Link className="linkExpo" to="/frontend">
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
-
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
 
         <div id="item-2">
-          <Link className="linkExpo">
+          <Link className="linkExpo" key={experienceLinks.id} to="/desing">
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
-
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
 
         <div id="item-3"></div>
         <div id="item-4">
-          <MovieClipOne />
+          <MovieClipOne className="movieClip" />
         </div>
         <div id="item-5"></div>
         <div id="item-6">
-          <Link className="linkExpo">
+          <Link className="linkExpo" to="/copywriting">
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
-
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
 
         <div id="item-7">
-          <Link className="linkExpo">
+          <Link className="linkExpo" to="/univeristy">
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
-
             <img className="arrow" src={arrow}></img>
           </Link>
         </div>
         <div id="item-8">
-          <MovieClipThree />
+          <MovieClipThree className="movieClip" />
         </div>
         <div id="item-9">
-          <MovieClipTwo />
+          <MovieClipTwo className="movieClip" />
         </div>
         <div id="item-10"></div>
         <div id="item-11">
-          <Link className="linkExpo">
+          <Link className="linkExpo" to="/salon">
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>

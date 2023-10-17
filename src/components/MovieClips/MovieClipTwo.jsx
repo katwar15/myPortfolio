@@ -1,15 +1,34 @@
 import HoverVideoPlayer from "react-hover-video-player";
+import { useState, useEffect } from "react";
 
 import clipTwo from "../../assets/clipTwo.mp4";
 
 const MovieClipTwo = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
   return (
     <>
-      <HoverVideoPlayer
-        loop={true}
-        videoSrc={clipTwo}
-        style={{ height: "200px", display: "flex", width: "100%" }}
-      ></HoverVideoPlayer>
+      {matches && (
+        <HoverVideoPlayer
+          loop={true}
+          videoSrc={clipTwo}
+          style={{ height: "200px", display: "flex", width: "100%" }}
+        ></HoverVideoPlayer>
+      )}
+      {!matches && (
+        <HoverVideoPlayer
+          loop={true}
+          videoSrc={clipTwo}
+          style={{ height: "180px", display: "flex", width: "100%" }}
+        ></HoverVideoPlayer>
+      )}
     </>
   );
 };

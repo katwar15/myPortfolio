@@ -47,6 +47,7 @@
   padding-top: 7rem;
   padding-left: 7rem /* 56px */;
   padding-right: 7rem /* 56px */;
+  margin-bottom: 20rem;
 }
 
 .columnContainer {
@@ -90,11 +91,56 @@
   transform: translate(10px);
 }
 
+@media screen and (max-width: 1200px) {
+  .portfolioContainer {
+    padding-left: 6rem /* 56px */;
+    padding-right: 6rem /* 56px */;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolioContainer {
+    padding-left: 4rem /* 56px */;
+    padding-right: 4rem /* 56px */;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .containerPortfolio {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .portfolioContainer {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .portfolioContainer {
+    padding-left: 3rem /* 56px */;
+    padding-right: 3rem /* 56px */;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .containerPortfolio {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
-    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .container_portfolioGroup {
@@ -116,7 +162,7 @@
   .portfolioContainer {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
-    margin: 0;
+    margin-bottom: 10vh;
   }
 
   .columnContainer {

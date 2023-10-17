@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="containerPortfolio">
-        <h1 className="h1_portfolio">Portolio</h1>
+        <h1 className="h1_portfolio">Portfolio</h1>
         <p className=" p_portfolio">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

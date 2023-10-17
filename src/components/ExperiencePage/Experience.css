@@ -47,6 +47,8 @@
   gap: 0px;
   height: 100%;
   width: 100%;
+  margin-bottom: 20vh;
+
   border-top: 1px solid rgb(21, 19, 17);
 }
 
@@ -330,7 +332,8 @@
   .experienceDiv {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
-    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .gridExperience {
@@ -338,11 +341,12 @@
 
     grid-template-rows: 1fr 1fr 180px 1fr 1fr 1fr 1fr;
     grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 20vh;
   }
 
   .h1_experience {
     font-size: 2rem /* 24px */;
-    color: rgba(21, 19, 17, var(--tw-text-opacity));
+    color: rgba(21, 19, 17);
     padding-bottom: 1.25rem /* 20px */;
   }
 
@@ -368,8 +372,6 @@
   #item-8,
   #item-9 {
     height: 180px;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   #item-1,
@@ -406,6 +408,7 @@
 
     grid-template-rows: 1fr 1fr 180px 1fr 1fr 1fr 1fr;
     grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 10vh;
   }
 
   .h1_experience {

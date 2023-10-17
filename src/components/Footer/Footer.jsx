@@ -1,10 +1,8 @@
 import "./Footer.css";
-import {
-  FaBehanceSquare,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-} from "react-icons/fa";
+
+import mailIcon from "/src/assets/mail.svg";
+import { footerIcons } from "../../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,26 +11,22 @@ const Footer = () => {
         <h1 className="h1_Contact">Contact</h1>
         <footer className="gridFooter">
           <div id="iconT">
-            <a href="mailto:natasza.warmuz@gmail.com" className="contactH1">
-              <FaEnvelope className="iconS" />
+            <a href="mailto:natasza.warmuz@gmail.com">
+              <img className="iconSMail" src={mailIcon} />
             </a>
           </div>
           <div id="textTele">
             <a href="mailto:natasza.warmuz@gmail.com" className="contactH1mail">
-              natasza.warmuz@gmail.com
+              <p className="contactPmail">natasza.warmuz@gmail.com</p>
             </a>
           </div>
           <div id="mail">MAIL</div>
           <div id="iconS">
-            <a href="https://github.com/katwar15">
-              <FaGithub className="iconS" />
-            </a>
-            <a href="https://www.behance.net/katarzynawarmuz">
-              <FaBehanceSquare className="iconS" />
-            </a>
-            <a href="https://www.linkedin.com/in/katarzyna-warmuz-631364230/">
-              <FaLinkedin className="iconS" />
-            </a>
+            {footerIcons.map((e) => (
+              <Link to={e.to} key={e}>
+                <img src={e.icon} className="iconS" />
+              </Link>
+            ))}
           </div>
         </footer>
       </div>

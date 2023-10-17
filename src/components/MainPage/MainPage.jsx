@@ -1,4 +1,5 @@
 import Hopsa from "../Hopsa/Hopsa";
+import Job from "../JobComponent/Job";
 import MarqueeComponent from "../MaqueeComponent/MarqueeComponent";
 import Hero from "./Hero";
 import "./MainPage.css";
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Hero />
       <MarqueeComponent />
       <Hopsa />
+      <Job></Job>
     </div>
   );
 };

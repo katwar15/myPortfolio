@@ -8,6 +8,11 @@ import spokoj from "/src/assets/spokoj.png";
 import format from "/src/assets/format.png";
 import github from "/src/assets/github.png";
 
+import behanceIcon from "/src/assets/behance.svg";
+import githubIcon from "/src/assets/github.svg";
+import linkedinIcon from "/src/assets/linkedin.svg";
+import Job from "../components/JobComponent/Job";
+
 export const mainLinks = [
   {
     id: "about",
@@ -51,39 +56,6 @@ export const navLinks = [
     id: "contact",
     title: "contact",
     to: "/contact",
-  },
-];
-
-export const experienceLinks = [
-  {
-    id: "frontend",
-    title: "frontend",
-    rok: 2023,
-    to: "/frontend",
-  },
-  {
-    id: "ux/ui desing",
-    title: "desing",
-    rok: 2023,
-    to: "/desing",
-  },
-  {
-    id: "copywriting",
-    title: "copywriting",
-    rok: 2023,
-    to: "/copywriting",
-  },
-  {
-    id: "univeristy",
-    title: "univeristy",
-    rok: 2023,
-    to: "/univeristy",
-  },
-  {
-    id: "salon",
-    title: "salon",
-    rok: 2023,
-    to: "/salon",
   },
 ];
 
@@ -239,5 +211,77 @@ export const hopsaImages = [
     job: "copywriting",
     src: `${spokoj}`,
     years: 2022,
+  },
+];
+
+export const footerIcons = [
+  { icon: `${githubIcon}`, to: "https://github.com/katwar15" },
+  { icon: `${behanceIcon}`, to: "https://www.behance.net/katarzynawarmuz" },
+  {
+    icon: `${linkedinIcon}`,
+    to: "https://www.linkedin.com/in/katarzyna-warmuz-631364230/",
+  },
+];
+
+export const experienceLinks = [
+  {
+    id: "frontend",
+    title: "frontend",
+    to: "/frontend",
+    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+    mainImg: `${pole}`,
+    mainImgOne: `${pole}`,
+    mainImgTwo: `${pole}`,
+    mainImgThree: `${pole}`,
+    toolsDescribtion: " Lorem ipsum dolor sit amet",
+    router: <Job />,
+  },
+  {
+    id: "desing",
+    title: "desing",
+    to: "/desing",
+    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+    mainImg: `${pole}`,
+    mainImgOne: `${pole}`,
+    mainImgTwo: `${pole}`,
+    mainImgThree: `${pole}`,
+    toolsDescribtion: " Lorem ipsum dolor sit amet",
+    router: <Job />,
+  },
+  {
+    id: "copywriting",
+    title: "copywriting",
+    to: "/copywriting",
+    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+    mainImg: `${pole}`,
+    mainImgOne: `${pole}`,
+    mainImgTwo: `${pole}`,
+    mainImgThree: `${pole}`,
+    toolsDescribtion: " Lorem ipsum dolor sit amet",
+    router: <Job />,
+  },
+  {
+    id: "univeristy",
+    title: "univeristy",
+    to: "/univeristy",
+    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+    mainImg: `${pole}`,
+    mainImgOne: `${pole}`,
+    mainImgTwo: `${pole}`,
+    mainImgThree: `${pole}`,
+    toolsDescribtion: " Lorem ipsum dolor sit amet",
+    router: <Job />,
+  },
+  {
+    id: "salon",
+    title: "salon",
+    to: "/salon",
+    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+    mainImg: `${pole}`,
+    mainImgOne: `${pole}`,
+    mainImgTwo: `${pole}`,
+    mainImgThree: `${pole}`,
+    toolsDescribtion: " Lorem ipsum dolor sit amet",
+    router: <Job />,
   },
 ];

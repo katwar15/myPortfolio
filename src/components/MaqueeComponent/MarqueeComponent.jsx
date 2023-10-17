@@ -15,12 +15,13 @@ const MarqueeComponent = () => {
         style={{
           borderTop: "1px solid rgb(21, 19, 17)",
           transition: "all 0.4s",
+          width: "100%",
         }}
-        className=" relative w-full "
       >
         {hover ? (
           <Marquee
             style={{
+              backgroundColor: "rgba(255, 255, 255, 0.5)",
               paddingTop: "2rem",
               paddingBottom: "2rem",
             }}
@@ -127,14 +128,15 @@ const MarqueeComponent = () => {
         style={{
           borderTop: "1px solid rgb(21, 19, 17)",
           borderBottom: "1px solid rgb(21, 19, 17)",
-
           transition: "all 0.4s",
         }}
-        className=" relative w-full "
+        className="w-full "
       >
         {hover2 ? (
           <Marquee
             style={{
+              backgroundColor: "rgba(255, 255, 255, 0.5)",
+
               paddingTop: "2rem",
               paddingBottom: "2rem",
             }}

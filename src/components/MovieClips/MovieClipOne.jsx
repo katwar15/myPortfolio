@@ -1,20 +1,35 @@
 import HoverVideoPlayer from "react-hover-video-player";
+import { useState, useEffect } from "react";
 
 import clipOne from "../../assets/background.mp4";
 
 const MovieClipOne = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   return (
     <>
-      <HoverVideoPlayer
-        videoSrc={clipOne}
-        loop={true}
-        style={{
-          height: "190px",
-          display: "flex",
-          width: "99.7%",
-          justifyItems: "center",
-        }}
-      ></HoverVideoPlayer>
+      {matches && (
+        <HoverVideoPlayer
+          loop={true}
+          videoSrc={clipOne}
+          style={{ height: "200px", display: "flex", width: "100%" }}
+        ></HoverVideoPlayer>
+      )}
+      {!matches && (
+        <HoverVideoPlayer
+          loop={true}
+          videoSrc={clipOne}
+          style={{ height: "180px", display: "flex", width: "100%" }}
+        ></HoverVideoPlayer>
+      )}
     </>
   );
 };
