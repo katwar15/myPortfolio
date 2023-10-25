@@ -1,29 +1,43 @@
-import { experienceLinks } from "../../constants";
+import { useLocation } from "react-router-dom";
 import "./Job.css";
 
-const Job = ({ experienceLinks }) => {
+function Job() {
+  const location = useLocation();
+
+  const {
+    titleJob,
+    mainImg,
+    jobDescription,
+    mainImgOne,
+    mainImgTwo,
+    mainImgThree,
+    toolsDescribtion,
+  } = location.state;
+
   return (
     <>
       <div className="containerJob">
-        <h1 className="h1Job">{experienceLinks.title}</h1>
-        <img className="imageJob" src={experienceLinks.mainImg}></img>
+        <h1 className="h1Job">{titleJob}</h1>
+        <p className="pJob">coś tam trzeba wymyślic</p>
+
+        <img className="imageJob" src={mainImg}></img>
         <h2 className="h2Job">Opis stanowiska</h2>
 
-        <p className=" pJob">{experienceLinks.jobDescription}</p>
+        <p className="pJob">{jobDescription}</p>
         <div className="imagesJob">
           {/* array of the three images */}
 
-          <img className="imgJob" src={experienceLinks.mainImgOne}></img>
-          <img className="imgJob" src={experienceLinks.mainImgTwo}></img>
+          <img className="imgJobMini" src={mainImgOne}></img>
+          <img className="imgJobMini" src={mainImgTwo}></img>
 
-          <img className="imgJob" src={experienceLinks.mainImgThree}></img>
+          <img className="imgJobMini" src={mainImgThree}></img>
         </div>
         <h2 className="h2Job">Wykorzystywane narzędzia:</h2>
 
-        <p className="pJob">{experienceLinks.toolsDescribtion}</p>
+        <p className="pJob">{toolsDescribtion}</p>
       </div>
     </>
   );
-};
+}
 
 export default Job;

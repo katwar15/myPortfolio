@@ -1,7 +1,9 @@
 .containerHero {
   margin-bottom: 60vh;
   position: relative;
-  top: 40vh;
+
+  top: 15vh;
+  padding-bottom: 10rem;
 }
 
 .containerName {
@@ -14,6 +16,9 @@
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-top: 2.5rem /* 40px */;
+  position: relative;
+  z-index: 1;
+  top: 40vh;
 }
 
 .containerRole {
@@ -38,9 +43,9 @@
 }
 
 .h1Name {
-  font-size: 4.5rem;
-  line-height: 1;
-  color: #04b703;
+  font-size: 7rem;
+  line-height: 0.8;
+  color: rgba(21, 19, 17);
 }
 
 .h2Outline {
@@ -53,7 +58,9 @@
   padding-right: 0.5rem /* 8px */;
   color: rgba(21, 19, 17);
   font-size: 1.5rem;
-  font-family: HelveticaNeueBold, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-family: KonstantGrotesk, Helvetica, Arial, sans-serif;
 }
 
 .video {

@@ -1,0 +1,58 @@
+.imgLoopContainer {
+  transition: all 0.4s;
+  top: 0px;
+}
+.divImg1 {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+  left: -6rem;
+  top: 5vh;
+  transition: all 0.4s;
+}
+
+.divImg2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 18vh;
+  width: 100%;
+  right: 13rem;
+  transition: all 0.4s;
+}
+
+.divImg3 {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  right: -5rem;
+  top: 20rem;
+  transition: all 0.4s;
+}
+
+.divImg4 {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  right: 15rem;
+  top: 4rem;
+  transition: all 0.4s;
+}
+
+.divImg5 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 2rem;
+  top: 20rem;
+  transition: all 0.4s;
+}
+
+.loomImg5 {
+  width: 25%;
+  transition: all 0.4s;
+}

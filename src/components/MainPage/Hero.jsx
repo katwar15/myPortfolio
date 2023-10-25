@@ -1,9 +1,11 @@
+import ImagesLoop from "../ImgLoopBackground/ImgLoop";
 import "./Hero.css";
 
 const Hero = () => {
   return (
     <>
       <div className="containerHero">
+        <ImagesLoop />
         <div className="containerName">
           <div className="flex flex-col ">
             <h1 className="h1Name ">katarzyna </h1>

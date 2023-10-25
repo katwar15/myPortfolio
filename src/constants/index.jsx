@@ -7,11 +7,9 @@ import email from "/src/assets/email.png";
 import spokoj from "/src/assets/spokoj.png";
 import format from "/src/assets/format.png";
 import github from "/src/assets/github.png";
-
 import behanceIcon from "/src/assets/behance.svg";
 import githubIcon from "/src/assets/github.svg";
 import linkedinIcon from "/src/assets/linkedin.svg";
-import Job from "../components/JobComponent/Job";
 
 export const mainLinks = [
   {
@@ -220,68 +218,5 @@ export const footerIcons = [
   {
     icon: `${linkedinIcon}`,
     to: "https://www.linkedin.com/in/katarzyna-warmuz-631364230/",
-  },
-];
-
-export const experienceLinks = [
-  {
-    id: "frontend",
-    title: "frontend",
-    to: "/frontend",
-    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
-    mainImg: `${pole}`,
-    mainImgOne: `${pole}`,
-    mainImgTwo: `${pole}`,
-    mainImgThree: `${pole}`,
-    toolsDescribtion: " Lorem ipsum dolor sit amet",
-    router: <Job />,
-  },
-  {
-    id: "desing",
-    title: "desing",
-    to: "/desing",
-    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
-    mainImg: `${pole}`,
-    mainImgOne: `${pole}`,
-    mainImgTwo: `${pole}`,
-    mainImgThree: `${pole}`,
-    toolsDescribtion: " Lorem ipsum dolor sit amet",
-    router: <Job />,
-  },
-  {
-    id: "copywriting",
-    title: "copywriting",
-    to: "/copywriting",
-    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
-    mainImg: `${pole}`,
-    mainImgOne: `${pole}`,
-    mainImgTwo: `${pole}`,
-    mainImgThree: `${pole}`,
-    toolsDescribtion: " Lorem ipsum dolor sit amet",
-    router: <Job />,
-  },
-  {
-    id: "univeristy",
-    title: "univeristy",
-    to: "/univeristy",
-    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
-    mainImg: `${pole}`,
-    mainImgOne: `${pole}`,
-    mainImgTwo: `${pole}`,
-    mainImgThree: `${pole}`,
-    toolsDescribtion: " Lorem ipsum dolor sit amet",
-    router: <Job />,
-  },
-  {
-    id: "salon",
-    title: "salon",
-    to: "/salon",
-    jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
-    mainImg: `${pole}`,
-    mainImgOne: `${pole}`,
-    mainImgTwo: `${pole}`,
-    mainImgThree: `${pole}`,
-    toolsDescribtion: " Lorem ipsum dolor sit amet",
-    router: <Job />,
   },
 ];

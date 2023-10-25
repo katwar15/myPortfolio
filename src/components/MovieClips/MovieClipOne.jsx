@@ -20,7 +20,7 @@ const MovieClipOne = () => {
         <HoverVideoPlayer
           loop={true}
           videoSrc={clipOne}
-          style={{ height: "200px", display: "flex", width: "100%" }}
+          style={{ height: "199px", display: "flex", width: "100%" }}
         ></HoverVideoPlayer>
       )}
       {!matches && (

@@ -6,8 +6,10 @@ import MovieClipTwo from "../MovieClips/MovieClipTwo";
 import MovieClipThree from "../MovieClips/MovieClipThree";
 import MovieClipFour from "../MovieClips/MovieClipFour";
 import "./Experience.css";
+import pole from "/src/assets/pole.png";
+import email from "/src/assets/email.png";
 
-const Experience = ({ experienceLinks }) => {
+function Experience() {
   return (
     <>
       <div className="experienceDiv">
@@ -29,7 +31,20 @@ const Experience = ({ experienceLinks }) => {
         </div>
 
         <div id="item-1">
-          <Link className="linkExpo" to="/frontend">
+          <Link
+            className="linkExpo"
+            to="/experience/frontend"
+            state={{
+              pathname: "/experience/frontend",
+              titleJob: "frontend",
+              jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+              mainImg: `${pole}`,
+              mainImgOne: `${pole}`,
+              mainImgTwo: `${pole}`,
+              mainImgThree: `${pole}`,
+              toolsDescribtion: " Lorem ipsum dolor sit amet",
+            }}
+          >
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
@@ -37,7 +52,20 @@ const Experience = ({ experienceLinks }) => {
         </div>
 
         <div id="item-2">
-          <Link className="linkExpo" key={experienceLinks.id} to="/desing">
+          <Link
+            className="linkExpo"
+            to="/experience/design"
+            state={{
+              pathname: "/experience/design",
+              titleJob: "design",
+              jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+              mainImg: `${email}`,
+              mainImgOne: `${email}`,
+              mainImgTwo: `${email}`,
+              mainImgThree: `${email}`,
+              toolsDescribtion: " Lorem ipsum dolor sit amet",
+            }}
+          >
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
@@ -50,7 +78,20 @@ const Experience = ({ experienceLinks }) => {
         </div>
         <div id="item-5"></div>
         <div id="item-6">
-          <Link className="linkExpo" to="/copywriting">
+          <Link
+            className="linkExpo"
+            to="/experience/copywriting"
+            state={{
+              pathname: "/experience/copywriting",
+              titleJob: "copywriting",
+              jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+              mainImg: `${email}`,
+              mainImgOne: `${email}`,
+              mainImgTwo: `${email}`,
+              mainImgThree: `${email}`,
+              toolsDescribtion: " Lorem ipsum dolor sit amet",
+            }}
+          >
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
@@ -58,7 +99,20 @@ const Experience = ({ experienceLinks }) => {
         </div>
 
         <div id="item-7">
-          <Link className="linkExpo" to="/univeristy">
+          <Link
+            className="linkExpo"
+            to="/experience/university"
+            state={{
+              pathname: "/experience/university",
+              titleJob: "university",
+              jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+              mainImg: `${email}`,
+              mainImgOne: `${email}`,
+              mainImgTwo: `${email}`,
+              mainImgThree: `${email}`,
+              toolsDescribtion: " Lorem ipsum dolor sit amet",
+            }}
+          >
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
@@ -72,7 +126,20 @@ const Experience = ({ experienceLinks }) => {
         </div>
         <div id="item-10"></div>
         <div id="item-11">
-          <Link className="linkExpo" to="/salon">
+          <Link
+            className="linkExpo"
+            to="/experience/salon"
+            state={{
+              pathname: "/experience/salon",
+              title: "salon",
+              jobDescription: "lorem sdfh jhsdfk hoasdj fijasf osahf ",
+              mainImg: `${email}`,
+              mainImgOne: `${email}`,
+              mainImgTwo: `${email}`,
+              mainImgThree: `${email}`,
+              toolsDescribtion: " Lorem ipsum dolor sit amet",
+            }}
+          >
             <h1 className="h1_Grid">experience</h1>
             <h1 className="h1_Grid">rok</h1>
             <img className="arrow" src={arrow}></img>
@@ -81,6 +148,6 @@ const Experience = ({ experienceLinks }) => {
       </div>
     </>
   );
-};
+}
 
 export default Experience;

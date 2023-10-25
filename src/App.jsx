@@ -11,7 +11,6 @@ import Job from "./components/JobComponent/Job";
 import MainPage from "./components/MainPage/MainPage";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/PortfolioPage/Portfolio";
-import { experienceLinks } from "./constants";
 
 function App() {
   return (
@@ -25,7 +24,11 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path={`${experienceLinks.to}`} element={<Job />} />
+          <Route path="/experience/frontend" element={<Job />} />
+          <Route path="/experience/design" element={<Job />} />
+          <Route path="/experience/copywriting" element={<Job />} />
+          <Route path="/experience/university" element={<Job />} />
+          <Route path="/experience/salon" element={<Job />} />
         </Routes>
         <Footer />
       </BrowserRouter>

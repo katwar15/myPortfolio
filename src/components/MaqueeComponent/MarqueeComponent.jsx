@@ -37,7 +37,8 @@ const MarqueeComponent = () => {
                     <h2
                       key={e.id["skills"]}
                       style={{
-                        fontFamily: "HelveticaNeueBold",
+                        fontFamily: "KonstantGrotesk",
+
                         paddingLeft: "1rem",
                         paddingRight: "1rem",
                         color: "#151311",
@@ -61,7 +62,7 @@ const MarqueeComponent = () => {
                     <h2
                       key={e.id["soft-skill"]}
                       style={{
-                        fontFamily: "HelveticaLT75BoldOutline",
+                        fontFamily: "HelveticaNeueRegular",
                         color: "#151311",
                       }}
                     >
@@ -98,9 +99,10 @@ const MarqueeComponent = () => {
                   <h2
                     key={e.id["skills"]}
                     style={{
-                      fontFamily: "HelveticaNeueBold",
-                      paddingLeft: "2rem",
-                      paddingRight: "2rem",
+                      fontFamily: "KonstantGrotesk",
+
+                      paddingLeft: "3rem",
+                      paddingRight: "3rem",
                       color: "#151311",
                     }}
                   >
@@ -110,7 +112,7 @@ const MarqueeComponent = () => {
                   <h2
                     key={e.id["soft-skill"]}
                     style={{
-                      fontFamily: "HelveticaLT75BoldOutline",
+                      fontFamily: "HelveticaNeueRegular",
                       color: "#151311",
                     }}
                   >
@@ -152,7 +154,8 @@ const MarqueeComponent = () => {
                     <h2
                       key={e.id["skills"]}
                       style={{
-                        fontFamily: "HelveticaNeueBold",
+                        fontFamily: "KonstantGrotesk",
+
                         paddingLeft: "1rem",
                         paddingRight: "1rem",
                         color: "#151311",
@@ -176,7 +179,8 @@ const MarqueeComponent = () => {
                     <h2
                       key={e.id["soft-skill"]}
                       style={{
-                        fontFamily: "HelveticaLT75BoldOutline",
+                        fontFamily: "HelveticaNeueRegular",
+
                         color: "#151311",
                       }}
                     >
@@ -213,9 +217,10 @@ const MarqueeComponent = () => {
                   <h2
                     key={e.id["skills"]}
                     style={{
-                      fontFamily: "HelveticaNeueBold",
-                      paddingLeft: "2rem",
-                      paddingRight: "2rem",
+                      fontFamily: "KonstantGrotesk",
+
+                      paddingLeft: "3rem",
+                      paddingRight: "3rem",
                       color: "#151311",
                     }}
                   >
@@ -225,7 +230,8 @@ const MarqueeComponent = () => {
                   <h2
                     key={e.id["soft-skill"]}
                     style={{
-                      fontFamily: "HelveticaLT75BoldOutline",
+                      fontFamily: "HelveticaNeueRegular",
+
                       color: "#151311",
                     }}
                   >

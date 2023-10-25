@@ -22,6 +22,11 @@
   src: url("../src/assets/HelveticaLightNormal.ttf");
 }
 
+@font-face {
+  font-family: KonstantGrotesk;
+  src: url("../src/assets/KonstantGrotesk.otf");
+}
+
 :root {
   font-family: HelveticaNeueRegular, Helvetica, Arial, sans-serif;
   background-color: #ededed;
@@ -44,14 +49,14 @@ html {
 }
 
 h1 {
-  font-family: HelveticaNeueBold;
+  font-family: KonstantGrotesk;
   font-size: 3.2em;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: HelveticaLT75BoldOutline;
+  font-family: KonstantGrotesk;
   font-size: 1.875rem;
   line-height: 1.1;
   text-transform: uppercase;
