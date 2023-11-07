@@ -1,18 +1,31 @@
 // import React from 'react';
 
 import "./Contact.css";
-import emailjs from "@emailjs/browser";
 import ForwardButton from "../ForwardButton/ForwardButton";
 
+import { sendEmail } from "./SendFile";
+import { useState } from "react";
+
 function Contact() {
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(
-      "service_om1tecn",
-      "template_dlkq9sq",
-      e.target,
-      "QmvxzzBJ4pzGDoKyW"
-    );
+  const [details, setDetails] = useState({
+    subject: "",
+    message: "",
+    emailFrom: "",
+  });
+
+  const handleDetails = (e) => {
+    const { name, value } = e.target;
+
+    setDetails((preventDetails) => {
+      return {
+        ...preventDetails,
+        [name]: value,
+      };
+    });
+  };
+
+  const handleSendEmail = () => {
+    sendEmail(details);
   };
 
   return (
@@ -40,15 +53,31 @@ function Contact() {
             placeholder="Your email"
             required
             name="emailFrom"
+            value={details.emailFrom}
+            onChange={handleDetails}
           ></input>
-
+          <input
+            className="input"
+            type="text"
+            placeholder="Subject"
+            required
+            name="subject"
+            value={details.subject}
+            onChange={handleDetails}
+          ></input>
           <textarea
             className="textarea"
             placeholder="Your message"
             required
             name="message"
+            value={details.message}
+            onChange={handleDetails}
           ></textarea>
-          <button className="submitButton" type="submit">
+          <button
+            className="submitButton"
+            type="submit"
+            onClick={handleSendEmail}
+          >
             Submit
           </button>
         </form>
