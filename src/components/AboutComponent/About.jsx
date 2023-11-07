@@ -1,71 +1,110 @@
-// import { Link } from "react-router-dom";
+import { useRef } from "react";
+import gsap from "gsap";
+
+import knit from "../../assets/knit.jpg";
+import jacht from "../../assets/jacht.jpg";
+import szopki from "../../assets/szopki.jpg";
+import dzialeczka from "../../assets/dzialeczka.jpg";
+import kodulec from "../../assets/kodulec.jpg";
+
 import "./About.css";
 
-const AboutPage = () => {
+const Hero = () => {
+  const float1 = useRef(null);
+  const float2 = useRef(null);
+  const float3 = useRef(null);
+
+  const speed = 0.1;
+
+  const manageMouseMove = (e) => {
+    const { movementX, movementY } = e;
+    gsap.set(float1.current, {
+      x: `+=${movementX * speed}`,
+      y: `+=${movementY * speed}`,
+    });
+    gsap.set(float2.current, {
+      x: `+=${movementX * speed * 0.5}`,
+      y: `+=${movementY * speed * 0.5}`,
+    });
+    gsap.set(float3.current, {
+      x: `+=${movementX * speed * 0.25}`,
+      y: `+=${movementY * speed * 0.25}`,
+    });
+  };
+
   return (
     <>
-      <div className="containerPortfolioAbout">
-        <h1 className="h1_portfolioAbout">About me</h1>
-      </div>
+      <div className="containerAbout" onMouseMove={(e) => manageMouseMove(e)}>
+        <div className="containerNameAbout">
+          <div className="containerUIAbout">
+            <h1 className="h1NameAbout">about me</h1>
+            <h2 className="h2RoleAbout">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </h2>
+          </div>
+        </div>
 
-      <div className="containerAbout">
-        <div id="empty0">&nbsp;</div>
-        <div id="text-1"></div>
-        <div id="text-2">
-          <p className="textP">
-            I am hardworking and conscientious person who can learn quickly and
-            like to deepen knowledge.
-          </p>
+        <div ref={float1} className="imgFloatAbout">
+          <img
+            src={kodulec}
+            alt="image"
+            width={170}
+            className="imgFloatTwoAbout"
+          />
+
+          <img
+            src={szopki}
+            alt="image"
+            width={250}
+            className="imgFloatThreeAbout"
+          />
         </div>
-        <div id="empty-3">&nbsp;</div>
-        <div id="img-4">&nbsp;</div>
-        <div id="text-5">
-          <h1 className="textH1Left">katarzyna warmuz</h1>
+        <div ref={float2} className="imgFloatAbout">
+          <img
+            src={knit}
+            alt="image"
+            width={200}
+            className="imgFloatFourAbout"
+          />
+
+          <img
+            src={jacht}
+            alt="image"
+            width={280}
+            className="imgFloatFiveAbout"
+          />
         </div>
-        <div id="empty-6">
-          <h2 className="textH2">hi, it&apos;s me 👋</h2>
+        <div ref={float3} className="imgFloatAbout">
+          <img
+            src={dzialeczka}
+            alt="image"
+            width={200}
+            className="imgFloatSevenAbout"
+          />
         </div>
-        <div id="empty-7">&nbsp;</div>
-        <div id="empty-8">&nbsp;</div>
-        <div id="img-9">&nbsp;</div>
-        <div id="text-10">
-          <h1 className="textH1Right">wanna learn:</h1>
-          <ul className="ulAbout">
-            <li className="liAbout">React JS</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-          </ul>
+      </div>
+      <div className="aboutButton">
+        <a className="buttonCV" href="/Warmuz_CV.pdf" download={true}>
+          Download cv
+        </a>
+
+        <div className="containerUIAbout">
+          <h2 className="pAbout">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </h2>
         </div>
-        <div id="empty-11">&nbsp;</div>
-        <div id="text-12">
-          <h1 className="textH1Right">tools:</h1>
-          <ul className="ulAbout">
-            <li className="liAbout">React JS</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-            <li className="liAbout">react</li>
-          </ul>
-        </div>
-        <div id="empty-13">&nbsp;</div>
-        <div id="empty-14">&nbsp;</div>
-        <div id="text-15">
-          <p className="textP">
-            I am hardworking and conscientious person who can learn quickly and
-            like to deepen knowledge. I have experience working in a CRM field
-            and copywriting, but I would be glad to start working as a
-            entry-level front-end developer.
-          </p>
-        </div>
-        <div id="empty-16">&nbsp;</div>
-        <div id="img-17">&nbsp;</div>
-        <div id="empty-18">&nbsp;</div>
-        <div id="empty-19">&nbsp;</div>
       </div>
     </>
   );
 };
 
-export default AboutPage;
+export default Hero;

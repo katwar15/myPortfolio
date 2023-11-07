@@ -14,7 +14,7 @@ const MarqueeComponent = () => {
         onMouseLeave={() => setHover(false)}
         style={{
           borderTop: "1px solid rgb(21, 19, 17)",
-          transition: "all 0.4s",
+          transition: "all 0.01s",
           width: "100%",
         }}
       >
@@ -130,7 +130,7 @@ const MarqueeComponent = () => {
         style={{
           borderTop: "1px solid rgb(21, 19, 17)",
           borderBottom: "1px solid rgb(21, 19, 17)",
-          transition: "all 0.4s",
+          transition: "all 0.01s",
         }}
         className="w-full "
       >
@@ -138,7 +138,6 @@ const MarqueeComponent = () => {
           <Marquee
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.5)",
-
               paddingTop: "2rem",
               paddingBottom: "2rem",
             }}

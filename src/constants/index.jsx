@@ -11,6 +11,8 @@ import behanceIcon from "/src/assets/behance.svg";
 import githubIcon from "/src/assets/github.svg";
 import linkedinIcon from "/src/assets/linkedin.svg";
 
+export { behance, pole, email, spokoj, format, github };
+
 export const mainLinks = [
   {
     id: "about",

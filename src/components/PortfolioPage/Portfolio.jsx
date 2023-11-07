@@ -4,6 +4,7 @@ import { portfolioLinks } from "../../constants/index.jsx";
 import Column from "./Column.jsx";
 import "./Portfolio.css";
 import Modal from "./Modal/Modal.jsx";
+import ForwardButton from "../ForwardButton/ForwardButton.jsx";
 
 const Portfolio = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
@@ -11,6 +12,8 @@ const Portfolio = () => {
   return (
     <>
       <div className="containerPortfolio">
+        <ForwardButton />
+
         <h1 className="h1_portfolio">Portfolio</h1>
         <p className=" p_portfolio">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

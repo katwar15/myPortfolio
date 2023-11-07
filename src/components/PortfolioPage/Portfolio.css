@@ -8,13 +8,12 @@
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-top: 8rem /* 192px */;
-  top: 4rem;
+  top: 8rem;
   position: relative;
 }
 
 .h1_portfolio {
   font-size: 3rem /* 24px */;
-
   color: rgba(21, 19, 17);
   padding-bottom: 1.25rem /* 20px */;
 }
@@ -44,10 +43,10 @@
   justify-content: center;
   margin-left: 7rem /* 56px */;
   margin-right: 7rem /* 56px */;
-  padding-top: 7rem;
+  padding-top: 11rem;
   padding-left: 7rem /* 56px */;
   padding-right: 7rem /* 56px */;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 
 .columnContainer {

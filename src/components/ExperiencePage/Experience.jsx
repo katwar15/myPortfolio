@@ -8,11 +8,13 @@ import MovieClipFour from "../MovieClips/MovieClipFour";
 import "./Experience.css";
 import pole from "/src/assets/pole.png";
 import email from "/src/assets/email.png";
+import ForwardButton from "../ForwardButton/ForwardButton";
 
 function Experience() {
   return (
     <>
       <div className="experienceDiv">
+        <ForwardButton />
         <h1 className="h1_experience">Experience</h1>
         <p className="p_experience">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

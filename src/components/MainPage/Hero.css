@@ -1,72 +1,95 @@
 .containerHero {
-  margin-bottom: 60vh;
+  margin-bottom: 40vh;
   position: relative;
-
   top: 15vh;
-  padding-bottom: 10rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .containerName {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 3.5rem /* 56px */;
-  padding-right: 3.5rem /* 56px */;
-  margin-left: 3.5rem /* 56px */;
-  margin-right: 3.5rem /* 56px */;
-  padding-top: 2.5rem /* 40px */;
-  position: relative;
-  z-index: 1;
-  top: 40vh;
-}
-
-.containerRole {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 3.5rem /* 56px */;
-  padding-right: 3.5rem /* 56px */;
-  margin-left: 3.5rem /* 56px */;
-  margin-right: 3.5rem /* 56px */;
-  padding-bottom: 2.5rem /* 40px */;
-  padding-top: 1rem;
+  align-items: center;
+  gap: 2rem;
   position: absolute;
-  top: 40vh;
-  z-index: 1;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .containerUI {
   display: flex;
-  padding-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .h1Name {
   font-size: 7rem;
   line-height: 0.8;
   color: rgba(21, 19, 17);
+  text-align: center;
+  letter-spacing: 9px;
 }
 
-.h2Outline {
-  padding-right: 0.5rem /* 8px */;
-  color: rgba(21, 19, 17);
-  font-size: 1.5rem;
+.h2Role {
+  font-size: 1.25rem;
+  line-height: 0.8;
+  color: rgba(21, 19, 17, 0.7);
+  text-align: center;
 }
 
-.h2HelveticaBold {
-  padding-right: 0.5rem /* 8px */;
-  color: rgba(21, 19, 17);
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: bold;
-  font-family: KonstantGrotesk, Helvetica, Arial, sans-serif;
-}
-
-.video {
-  height: 100%;
+.imgFloat {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  position: absolute;
+}
+
+.imgFloat img {
+  position: absolute;
+}
+
+.imgFloatOne {
+  left: 90%;
+  top: 70%;
+}
+
+.imgFloatTwo {
+  left: 5%;
+  top: 65%;
+}
+
+.imgFloatThree {
+  left: 35%;
+  top: 0%;
+}
+
+.imgFloatFour {
+  left: 5%;
+  top: 10%;
+}
+
+.imgFloatFive {
+  left: 80%;
+  top: 15%;
+}
+
+.imgFloatSix {
+  left: 60%;
+  top: 66%;
+}
+
+.imgFloatSeven {
+  left: 65%;
+  top: 2.5%;
+}
+
+.imgFloatEight {
+  left: 40%;
+  top: 75%;
 }
 
 /* BREAKPOINTS */

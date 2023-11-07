@@ -1,3 +1,25 @@
+.hopsaDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 3.5rem /* 56px */;
+  padding-right: 3.5rem /* 56px */;
+  margin-left: 3.5rem /* 56px */;
+  margin-right: 3.5rem /* 56px */;
+  padding-top: 10rem /* 192px */;
+  position: relative;
+}
+
+.p_experienceHopsa {
+  color: rgba(21, 19, 17, var(--tw-text-opacity));
+  font-size: 1.25rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  text-align: justify;
+  letter-spacing: 3px;
+  padding-bottom: 5rem;
+}
+
 .listMainGallery {
   display: flex;
   align-items: center;
@@ -7,7 +29,7 @@
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-bottom: 5rem;
-  margin-bottom: 20vh;
+  margin-bottom: 5rem;
 }
 
 .listGallery {
@@ -91,6 +113,13 @@
     font-size: 1.25rem /* 24px */;
   }
 
+  .hopsaDiv {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
   .listGallery {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -115,5 +144,13 @@
     padding-right: 0rem;
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hopsaDiv {
+    padding-left: 1rem /* 56px */;
+    padding-top: 1rem /* 40px */;
+    margin: 0;
   }
 }

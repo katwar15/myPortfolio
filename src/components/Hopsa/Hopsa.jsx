@@ -5,9 +5,9 @@ import Hopsik from "./Hopsik";
 const Hopsa = () => {
   return (
     <>
-      <div className="experienceDiv">
+      <div className="hopsaDiv">
         <h1 className="h1_experience">Years of experience</h1>
-        <p className="p_experience">
+        <p className="p_experienceHopsa">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
