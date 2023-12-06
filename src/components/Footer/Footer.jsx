@@ -20,7 +20,7 @@ const Footer = () => {
               <p className="contactPmail">natasza.warmuz@gmail.com</p>
             </a>
           </div>
-          <div id="mail">MAIL</div>
+          <div id="mail"></div>
           <div id="iconS">
             {footerIcons.map((e) => (
               <Link to={e.to} key={e}>

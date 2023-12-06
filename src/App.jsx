@@ -26,8 +26,8 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/experience/frontend" element={<Job />} />
-          <Route path="/experience/design" element={<Job />} />
+          <Route path="/experience/design-frontend" element={<Job />} />
+          <Route path="/experience/crm" element={<Job />} />
           <Route path="/experience/copywriting" element={<Job />} />
           <Route path="/experience/university" element={<Job />} />
           <Route path="/experience/salon" element={<Job />} />

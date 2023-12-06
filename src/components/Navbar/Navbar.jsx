@@ -1,5 +1,5 @@
 // import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import logoToggle from "../../assets/logoToggle.png";
 
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const Navbar = () => {
           <ul className="nav_list">
             {mainLinks.map((e) => (
               <li className="nav_item" key={e.id}>
-                <Link className="nav_link" to={e.to}>
+                <Link className="nav_link" to={e.to} onClick={toggle}>
                   {e.title}
                 </Link>
               </li>

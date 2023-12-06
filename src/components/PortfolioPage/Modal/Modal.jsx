@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
 const scaleAnimation = {
-  initial: { scale: 0, x: "-10%", y: "20%" },
+  initial: { scale: 0, x: "-50%", y: "1000%" },
   enter: {
     scale: 1,
     x: "-50%",

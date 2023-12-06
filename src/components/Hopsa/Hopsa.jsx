@@ -7,14 +7,15 @@ const Hopsa = () => {
     <>
       <div className="hopsaDiv">
         <h1 className="h1_experience">Years of experience</h1>
-        <p className="p_experienceHopsa">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <p className="p_experience">
+          Throughout my career, I have had several accomplishments across
+          various domains. I have authored scientific articles as well as
+          articles about design. Moreover, I was a Ph.D. student and taught
+          students about new media and feminism. Additionally, I have worked as
+          an editor for a humanities magazine. I have also created a brand and
+          learned about UX and UI design. Later, I learned how to code to bring
+          my ideas to life. All of this experience has helped me to think
+          broadly and unconventionally.
         </p>
       </div>
       <div className="listMainGallery">

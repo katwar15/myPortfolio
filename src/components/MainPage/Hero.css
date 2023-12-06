@@ -53,13 +53,13 @@
 }
 
 .imgFloatOne {
-  left: 90%;
-  top: 70%;
+  left: 75%;
+  top: 50%;
 }
 
 .imgFloatTwo {
-  left: 5%;
-  top: 65%;
+  left: -2%;
+  top: 55%;
 }
 
 .imgFloatThree {
@@ -68,7 +68,7 @@
 }
 
 .imgFloatFour {
-  left: 5%;
+  left: 0%;
   top: 10%;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .imgFloatSix {
-  left: 60%;
+  left: 45%;
   top: 66%;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .imgFloatEight {
-  left: 40%;
-  top: 75%;
+  left: 15%;
+  top: 70%;
 }
 
 /* BREAKPOINTS */

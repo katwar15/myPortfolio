@@ -23,8 +23,8 @@
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .nav_toggle {
@@ -79,6 +79,20 @@
 }
 
 /* BREAKPOINTS */
+
+@media screen and (max-width: 1018px) {
+  .nav {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-left: 2rem /* 56px */;
+    margin-right: 2rem /* 56px */;
+  }
+
+  .nav_item a {
+    font-size: 1.3rem;
+  }
+}
+
 /* for medium devices */
 @media screen and (max-width: 768px) {
   .container {
@@ -155,8 +169,8 @@
 
   .nav_close {
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: 1.2rem;
+    top: 3rem;
     font-size: 5vh;
     cursor: pointer;
     color: black;

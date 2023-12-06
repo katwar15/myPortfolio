@@ -1,7 +1,6 @@
 .containerPortfolio {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   padding-left: 3.5rem /* 56px */;
   padding-right: 3.5rem /* 56px */;
@@ -38,8 +37,11 @@
 
 .portfolioContainer {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
   margin-left: 7rem /* 56px */;
   margin-right: 7rem /* 56px */;
@@ -52,9 +54,9 @@
 .columnContainer {
   display: flex;
   width: 100%;
+  padding: 50px 100px 50px 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 5rem 50px 5rem;
   border-top: 1px solid rgb(21, 19, 17);
   cursor: pointer;
   transition: all 0.2s;
@@ -159,8 +161,8 @@
   }
 
   .portfolioContainer {
-    padding-left: 2rem /* 56px */;
-    padding-right: 2rem /* 56px */;
+    padding-left: 1rem /* 56px */;
+    padding-right: 1rem /* 56px */;
     margin-bottom: 10vh;
   }
 
@@ -186,10 +188,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .columnContainer {
-    padding: 40px 1rem 40px 1rem;
-  }
-
   .h1_portfolio {
     font-size: 2rem /* 24px */;
     color: rgba(21, 19, 17, var(--tw-text-opacity));
@@ -202,6 +200,31 @@
     padding-bottom: 4rem /* 56px */;
     text-align: justify;
     letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .columnContainer h1 {
+    font-size: 0.9rem;
+  }
+
+  .columnContainer p {
+    font-size: 0.9rem /* 24px */;
+  }
+
+  .portfolioContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .columnContainer h1 {
+    font-size: 1rem;
+  }
+
+  .columnContainer p {
+    font-size: 1rem /* 24px */;
   }
 }
 

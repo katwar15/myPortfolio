@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@uidotdev/usehooks";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { marqueAdje } from "../../constants/index.jsx";
@@ -6,6 +7,20 @@ import styles from "../../style";
 const MarqueeComponent = () => {
   const [hover, setHover] = useState(false);
   const [hover2, setHover2] = useState(false);
+
+  const isPaddingOk = useMediaQuery("(min-width: 768px)");
+
+  const styl = {
+    container: (isPaddingOk) => ({
+      backgroundColor: "rgba(255, 255, 255, 0.5)",
+      paddingTop: isPaddingOk ? "2rem" : "1rem",
+      paddingBottom: isPaddingOk ? "2rem" : "1rem",
+    }),
+    containerNoImg: (isPaddingOk) => ({
+      paddingTop: isPaddingOk ? "4rem" : "2rem",
+      paddingBottom: isPaddingOk ? "4rem" : "2rem",
+    }),
+  };
 
   return (
     <>
@@ -20,11 +35,7 @@ const MarqueeComponent = () => {
       >
         {hover ? (
           <Marquee
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              paddingTop: "2rem",
-              paddingBottom: "2rem",
-            }}
+            style={styl.container(isPaddingOk)}
             gradient={false}
             direction={"right"}
             speed={130}
@@ -84,10 +95,7 @@ const MarqueeComponent = () => {
           </Marquee>
         ) : (
           <Marquee
-            style={{
-              paddingTop: "4rem",
-              paddingBottom: "4rem",
-            }}
+            style={styl.containerNoImg(isPaddingOk)}
             gradient={false}
             direction={"left"}
             speed={50}
@@ -136,11 +144,7 @@ const MarqueeComponent = () => {
       >
         {hover2 ? (
           <Marquee
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              paddingTop: "2rem",
-              paddingBottom: "2rem",
-            }}
+            style={styl.container(isPaddingOk)}
             gradient={false}
             direction={"left"}
             speed={130}
@@ -201,10 +205,7 @@ const MarqueeComponent = () => {
           </Marquee>
         ) : (
           <Marquee
-            style={{
-              paddingTop: "4rem",
-              paddingBottom: "4rem",
-            }}
+            style={styl.containerNoImg(isPaddingOk)}
             gradient={false}
             direction={"right"}
             speed={50}

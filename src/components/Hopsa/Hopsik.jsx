@@ -2,15 +2,21 @@ import "./Hopsa.css";
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const animation = {
-  initial: { width: 0 },
-  open: {
-    width: "auto",
-    transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
-  },
-  closed: { width: 0 },
-};
+let animation = {};
+const isMobile = window.innerWidth < 770;
+
+if (!isMobile) {
+  animation = {
+    initial: { width: 0 },
+    open: {
+      width: "auto",
+      transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] },
+    },
+    closed: { width: 0 },
+  };
+}
 
 const GalleryList = ({ gallery }) => {
   const [isActive, setIsActive] = useState(false);
@@ -19,7 +25,7 @@ const GalleryList = ({ gallery }) => {
 
   return (
     <>
-      <div
+      <Link
         onMouseEnter={() => {
           setIsActive(true);
         }}
@@ -36,8 +42,9 @@ const GalleryList = ({ gallery }) => {
         >
           <img src={src}></img>
         </motion.div>
+
         <p>{years}</p>
-      </div>
+      </Link>
     </>
   );
 };

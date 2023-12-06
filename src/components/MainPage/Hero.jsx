@@ -47,9 +47,7 @@ const Hero = () => {
           </div>
         </div>
         <div ref={float1} className="imgFloat">
-          <img src={behance} alt="image" width={400} className="imgFloatOne" />
-
-          <img src={pole} alt="image" width={350} className="imgFloatOne" />
+          <img src={behance} alt="image" width={380} className="imgFloatOne" />
 
           <img src={email} alt="image" width={300} className="imgFloatTwo" />
 
@@ -67,7 +65,7 @@ const Hero = () => {
         <div ref={float3} className="imgFloat">
           <img src={pole} alt="image" width={200} className="imgFloatSeven" />
 
-          <img src={pole} alt="image" width={200} className="imgFloatEight" />
+          <img src={pole} alt="image" width={230} className="imgFloatEight" />
         </div>
       </div>
     </>

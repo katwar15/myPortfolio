@@ -16,13 +16,17 @@ const Portfolio = () => {
 
         <h1 className="h1_portfolio">Portfolio</h1>
         <p className=" p_portfolio">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Cool that you&apos;re here! Below you will find links to pages I have
+          made, that I will make, or links to my{" "}
+          <a href="https://github.com/katwar15" style={{ color: "#2FBB4F" }}>
+            <b>Github</b>
+          </a>{" "}
+          or{" "}
+          <a style={{ color: "#1769ff" }} href="https://github.com/katwar15">
+            <b>Behance</b>
+          </a>
+          . <br></br>
+          Bon Appetit!
         </p>
       </div>
       <div className="portfolioContainer">

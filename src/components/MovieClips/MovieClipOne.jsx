@@ -27,7 +27,7 @@ const MovieClipOne = () => {
         <HoverVideoPlayer
           loop={true}
           videoSrc={clipOne}
-          style={{ height: "180px", display: "flex", width: "100%" }}
+          style={{ height: "160px", display: "flex", width: "100%" }}
         ></HoverVideoPlayer>
       )}
     </>

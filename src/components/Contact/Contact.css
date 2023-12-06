@@ -11,6 +11,10 @@
   top: 8rem;
   position: relative;
   margin-bottom: 10rem;
+  background-image: url("../../assets/backback.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contactFormContainer {
@@ -24,12 +28,12 @@
 
 .h1_Contact {
   font-size: 3rem /* 24px */;
-  color: rgba(21, 19, 17, var(--tw-text-opacity));
+  color: rgba(21, 19, 17);
   padding-bottom: 1.25rem /* 20px */;
 }
 
 .p_Contact {
-  color: rgba(21, 19, 17, var(--tw-text-opacity));
+  color: rgba(21, 19, 17);
   font-size: 1.25rem /* 24px */;
   line-height: 2rem /* 32px */;
   text-align: justify;
@@ -48,6 +52,7 @@
 }
 
 .input {
+  color: rgba(21, 19, 17);
   font-size: 1rem;
   text-transform: none;
   font-family: HelveticaNeueRegular, Helvetica, Arial, sans-serif;
@@ -55,15 +60,27 @@
   cursor: pointer;
   transition: 0.3s;
   padding: 1rem 2rem;
-  border: solid 1px rgba(21, 19, 17);
   width: 70%;
   align-self: center;
   transition: 0.7s;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(21, 19, 17);
 }
 
 .textarea {
   width: 70%;
-  border: solid 1px rgba(21, 19, 17);
+
+  color: rgba(21, 19, 17);
+
   padding: 1rem 2rem;
   text-transform: none;
   font-family: HelveticaNeueRegular, Helvetica, Arial, sans-serif;
@@ -71,6 +88,17 @@
   cursor: pointer;
   align-self: center;
   transition: 0.7s;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(21, 19, 17);
 }
 
 .submitButton {
@@ -84,9 +112,102 @@
   align-self: center;
   transition: 0.7s;
   margin-top: 2rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .submitButton:hover {
   background-color: rgba(21, 19, 17);
-  color: #dedede;
+  color: #ededed;
+}
+
+@media screen and (max-width: 768px) {
+  .contactDiv {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .h1_experience {
+    font-size: 2rem /* 24px */;
+    color: rgba(21, 19, 17);
+    padding-bottom: 1.25rem /* 20px */;
+  }
+
+  .p_Contact {
+    font-size: 1rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    padding-bottom: 2rem /* 56px */;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+
+  .form {
+    padding: 0;
+    margin: 0;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+}
+
+/* Arro display */
+
+/* for small devices */
+
+@media screen and (max-width: 350px) {
+  .experienceDiv {
+    padding-left: 1rem /* 56px */;
+    padding-top: 1rem /* 40px */;
+    margin: 0;
+  }
+
+  .gridExperience {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 180px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 10vh;
+  }
+
+  .h1_experience {
+    font-size: 2rem /* 24px */;
+    color: rgba(21, 19, 17, var(--tw-text-opacity));
+    padding-bottom: 1.25rem /* 20px */;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+
+  .p_Contact {
+    font-size: 1rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    padding-bottom: 0rem /* 56px */;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+
+  .h1_Grid {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    justify-self: start;
+    transition: all 0.4s;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
 }

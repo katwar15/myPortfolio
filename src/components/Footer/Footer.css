@@ -2,14 +2,13 @@
   background-color: rgba(21, 19, 17);
   padding-left: 7rem /* 56px */;
   padding-right: 7rem /* 56px */;
-  padding-top: 2rem /* 192px */;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
 .h1_Contact {
   color: #ededed;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
@@ -18,7 +17,7 @@
   margin-top: 1rem;
 
   display: grid;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 90px 90px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   gap: 0px;
@@ -53,7 +52,7 @@
 }
 
 .contactH1mail {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #ededed;
   padding: 2rem;
   align-self: center;
@@ -61,7 +60,7 @@
 }
 
 .contactPmail {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ededed;
   padding: 2rem;
   align-self: center;
@@ -96,8 +95,8 @@
 
 .iconS {
   color: #ededed;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   transition: ease 0.3s;
 }
 
@@ -109,8 +108,8 @@
   display: flex;
   align-self: center;
   color: #ededed;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   transition: ease 0.3s;
 }
 
@@ -119,6 +118,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .gridFooter {
+    margin-top: 1rem;
+    grid-template-rows: 80px 80px;
+  }
+
   .containerContact {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
@@ -126,30 +130,27 @@
   }
 
   .h1_Contact {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .contactH1mail {
     padding: 0rem;
   }
 
   .contactPmail {
-    color: #ededed;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .contactPmail {
-    font-size: 1.5rem;
-    padding: 1.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
     align-self: center;
     font-family: KonstantGrotesk, Helvetica, Arial, sans-serif;
   }
 
   .iconS {
-    color: #ededed;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .iconSMail {
+    width: 2.3rem;
+    height: 2.3rem;
   }
 }
 
@@ -162,17 +163,19 @@
 
   .containerContact {
     padding-left: 1rem /* 56px */;
-    padding-top: 1rem /* 40px */;
+    padding-top: 0.1rem /* 40px */;
     margin: 0;
   }
 
   .h1_Contact {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   .contactH1 {
     color: #ededed;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .contactPmail {
@@ -191,10 +194,16 @@
   }
 }
 
+@media screen and (max-width: 426px) {
+  .contactPmail {
+    font-size: 0.7rem;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .h1_Contact {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 0.3rem;
   }
 
   .contactH1 {
@@ -203,7 +212,7 @@
   }
 
   .contactPmail {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 1rem;
   }
 
