@@ -233,6 +233,10 @@
   }
 
   .imgJob {
-    width: 1000%;
+    width: 100%;
+  }
+
+  .imgJobMini {
+    width: 100%;
   }
 }

@@ -15,6 +15,13 @@ import ForwardButton from "../ForwardButton/ForwardButton";
 import ulotka from "/src/assets/ulotka.jpg";
 import plakat from "/src/assets/plakat.jpg";
 import pazy from "/src/assets/pazy.png";
+import crmBig from "/src/assets/crmBig.png";
+import email1 from "/src/assets/email1.png";
+import email2 from "/src/assets/email2.png";
+import email3 from "/src/assets/email3.png";
+import mojaPage from "/src/assets/mojaPage.png";
+import bank from "/src/assets/bank.png";
+import wlasnySpokoj1 from "/src/assets/wlasnySpokoj1.png";
 
 import uxfront from "/src/assets/uxfront.png";
 
@@ -54,17 +61,17 @@ function Experience() {
                 "By 2022, I made the decision to change my career path. While I found nail art interesting, it wasn't enough to satisfy my knowledge-hungry mind. After years of studying, lecturing, and writing articles for some of the most important magazines in Poland, I realized that I wanted a career that combined my desire to create with my sociological-psychological flair. That's why I chose UX/UI design, which brings together these two elements. I also added frontend development to my skillset so that I could seamlessly incorporate ideas from Figma into the code",
 
               jobDescription:
-                "I dealt with everyone - customer service, arranging appointments, ordering equipment and supplies, bills and taxes. My side job was working as a nail styling instructor and participating in international championships. It was thanks to participating in competitions that I realized that I missed creating art at university. In my works, I was inspired by fashion, art and botany. I also often used histology or mycology textbooks. My clients appreciated my sense of aesthetics, but also my imagination, which went beyond average nail salons.",
+                "I have managed the design and coding of several important websites, including 'POLE. Dwumiesięcznik', 'Własny Spokój' project where I used React JS, and the ongoing redesign of 'Mały Format'. In addition, I have created an impressive portfolio website that incorporates seamless user experience (UX) design to provide easy access and engagement for users.",
               mainImg: `${uxfront}`,
-              mainImgOne: `${email}`,
-              mainImgTwo: `${email}`,
-              mainImgThree: `${email}`,
+              mainImgOne: `${mojaPage}`,
+              mainImgTwo: `${bank}`,
+              mainImgThree: `${wlasnySpokoj1}`,
               toolsDescribtion: " Lorem ipsum dolor sit amet",
               tool2: "figma",
-              tool3: "css & html",
-              tool4: "Tailwind CSS",
-              tool5: "react js",
-              tool6: "next js",
+              tool3: "css & html | bootstrap | tailwind css",
+              tool4: "javascript | react",
+              tool5: "Knowledge of W3C and WCAG standards",
+              tool6: "WordPress | Elementor",
             }}
           >
             <h1 className="h1_Grid">UX/UI design & frontend</h1>
@@ -83,13 +90,14 @@ function Experience() {
               company: "Oriflame cosmetics",
 
               entranceDis:
-                "come on? Have you ever wanted to open a nail salon after years spent at university? 😉 But seriously: working in the salon was tiring, but very developing in terms of personal interactions and creativity. Within three years, I had a group of regular customers and even fans, and I won several world titles in nail styling championships. Thanks to this experience, I learned what multitasking is, how to run social media well and how to sell your brand.",
+                "In this multifaceted role, I spearhead the creation of intricate mockups and assets within the dynamic realm of Figma, leveraging the insightful data gleaned from Microsoft Power BI. My responsibilities extend beyond mere design, encompassing a strategic dimension where I meticulously plan, craft, and scrutinize content for robust marketing campaigns.",
+
               jobDescription:
-                "I dealt with everyone - customer service, arranging appointments, ordering equipment and supplies, bills and taxes. My side job was working as a nail styling instructor and participating in international championships. It was thanks to participating in competitions that I realized that I missed creating art at university. In my works, I was inspired by fashion, art and botany. I also often used histology or mycology textbooks. My clients appreciated my sense of aesthetics, but also my imagination, which went beyond average nail salons.",
-              mainImg: `${uxfront}`,
-              mainImgOne: `${pole}`,
-              mainImgTwo: `${pole}`,
-              mainImgThree: `${pole}`,
+                "My role extends beyond design aesthetics, encompassing the end-to-end process of marketing campaign development. From meticulous planning to content creation and critical reviews, I orchestrate each facet to align seamlessly with overarching marketing objectives. This involves a nuanced understanding of target audiences, market trends, and the broader strategic goals of the organization. In the realm of Salesforce, I bring forth technical proficiency by crafting email templates using HTML and CSS. This involves a meticulous understanding of both Salesforce's architecture and the intricacies of coding, ensuring our email communications are not only visually compelling but also optimized for cross-platform compatibility and engagement.",
+              mainImg: `${crmBig}`,
+              mainImgOne: `${email1}`,
+              mainImgTwo: `${email2}`,
+              mainImgThree: `${email3}`,
               toolsDescribtion: " Lorem ipsum dolor sit amet",
               tool2: "salesforce",
               tool3: "css & html",
@@ -123,9 +131,9 @@ function Experience() {
               jobDescription:
                 "I dealt with everyone - customer service, arranging appointments, ordering equipment and supplies, bills and taxes. My side job was working as a nail styling instructor and participating in international championships. It was thanks to participating in competitions that I realized that I missed creating art at university. In my works, I was inspired by fashion, art and botany. I also often used histology or mycology textbooks. My clients appreciated my sense of aesthetics, but also my imagination, which went beyond average nail salons.",
               mainImg: `${pazy}`,
-              mainImgOne: `${email}`,
-              mainImgTwo: `${email}`,
-              mainImgThree: `${email}`,
+              mainImgOne: `${email1}`,
+              mainImgTwo: `${email2}`,
+              mainImgThree: `${email3}`,
               toolsDescribtion: " Lorem ipsum dolor sit amet",
             }}
           >

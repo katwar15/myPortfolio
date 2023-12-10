@@ -10,8 +10,13 @@ import github from "/src/assets/github.png";
 import behanceIcon from "/src/assets/behance.svg";
 import githubIcon from "/src/assets/github.svg";
 import linkedinIcon from "/src/assets/linkedin.svg";
+import bank from "/src/assets/bank.png";
+import pole2 from "/src/assets/pole2.png";
+import crm from "/src/assets/crm.png";
+import wlasnySpokoj from "/src/assets/wlasnySpokoj.png";
+import mojaPage from "/src/assets/mojaPage.png";
 
-export { behance, pole, email, spokoj, format, github };
+export { behance, pole, email, spokoj, format, github, bank, pole2 };
 
 export const mainLinks = [
   {
@@ -81,7 +86,7 @@ export const portfolioLinks = [
     title: "email design",
     subtitle: "design",
     to: "/emaildesign",
-    src: `${email}`,
+    src: `${crm}`,
     color: "#F5F5F5",
   },
   {
@@ -89,7 +94,7 @@ export const portfolioLinks = [
     title: "Mały Format",
     subtitle: "design",
 
-    to: "/malyformat",
+    to: "/",
     src: `${format}`,
     color: "#ffffff",
   },
@@ -116,7 +121,7 @@ export const marqueAdje = [
   {
     id: "skill",
     title: "figma",
-    src: `${email}`,
+    src: `${mojaPage}`,
   },
 
   {
@@ -127,61 +132,61 @@ export const marqueAdje = [
   {
     id: "skill",
     title: "vanilla js",
-    src: `${email}`,
+    src: `${crm}`,
   },
   {
     id: "soft-skill",
     title: "intuition",
-    src: `${email}`,
+    src: `${behance}`,
   },
   {
     id: "skill",
     title: "react js",
-    src: `${email}`,
+    src: `${pole}`,
   },
 
   {
     id: "soft-skill",
     title: "multitasking",
-    src: `${email}`,
+    src: `${bank}`,
   },
 
   {
     id: "skill",
     title: "html & css",
-    src: `${email}`,
+    src: `${spokoj}`,
   },
   {
     id: "soft-skill",
     title: "team player",
-    src: `${email}`,
+    src: `${pole2}`,
   },
 
   {
     id: "skill",
     title: "typescript",
-    src: `${email}`,
+    src: `${wlasnySpokoj}`,
   },
   {
     id: "soft-skill",
     title: "creativity",
-    src: `${email}`,
+    src: `${format}`,
   },
 
   {
     id: "skill",
     title: "Knowledge of HTPP and Rest API",
-    src: `${email}`,
+    src: `${pole2}`,
   },
   {
     id: "soft-skill",
     title: "Empathy",
-    src: `${email}`,
+    src: `${mojaPage}`,
   },
   {
     id: "skill",
     title: "Knowledge of W3C and WCAG standards",
-    src: `${email}`,
+    src: `${behance}`,
   },
   {
     id: "soft-skill",
@@ -193,7 +198,7 @@ export const marqueAdje = [
 export const hopsaImages = [
   {
     job: "frontend",
-    src: `${pole}`,
+    src: `${mojaPage}`,
     years: "2022-2023",
     link: "/experience/design-frontend",
   },
@@ -205,13 +210,13 @@ export const hopsaImages = [
   },
   {
     job: "CRM",
-    src: `${email}`,
+    src: `${crm}`,
     years: 2023,
     link: "/experience/crm",
   },
   {
     job: "copywriting",
-    src: `${spokoj}`,
+    src: `${wlasnySpokoj}`,
     years: "2015-2023",
     link: "/experience/copywriting",
   },

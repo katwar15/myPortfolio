@@ -41,8 +41,8 @@ function Contact() {
       <div className="contactDiv">
         <ForwardButton style={{ display: "flex", alignSelf: "flex-start" }} />
         <div className="contactFormContainer">
-          <h1 className="h1_Contact">Contact me</h1>
-          <p className="p_Contact">
+          <h1 className="h1_experience">Contact me</h1>
+          <p className="p_experience">
             Please contact me directly at
             <a
               href="mailto:natasza.warmuz@gmail.com"

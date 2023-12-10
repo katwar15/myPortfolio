@@ -7,7 +7,7 @@
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-top: 8rem /* 192px */;
-  top: 8rem;
+  margin-top: 10rem;
   position: relative;
 }
 
@@ -45,7 +45,7 @@
   justify-content: center;
   margin-left: 7rem /* 56px */;
   margin-right: 7rem /* 56px */;
-  padding-top: 11rem;
+  padding-top: 5rem;
   padding-left: 7rem /* 56px */;
   padding-right: 7rem /* 56px */;
   margin-bottom: 15rem;
@@ -57,6 +57,7 @@
   padding: 50px 100px 50px 100px;
   justify-content: space-between;
   align-items: center;
+  line-height: 0;
   border-top: 1px solid rgb(21, 19, 17);
   cursor: pointer;
   transition: all 0.2s;
@@ -74,6 +75,7 @@
   color: rgba(21, 19, 17);
   font-size: 1.5rem;
   transition: all 0.4s;
+  line-height: 0;
 }
 
 .columnContainer:hover h1 {
@@ -86,6 +88,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: all 0.4s;
+  line-height: 0;
 }
 
 .columnContainer:hover p {
@@ -112,27 +115,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .containerPortfolio {
-    padding-left: 2rem /* 56px */;
-    padding-right: 2rem /* 56px */;
+  .columnContainer {
+    padding: 40px 1rem 40px 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-
-  .portfolioContainer {
-    padding-left: 2rem /* 56px */;
-    padding-right: 2rem /* 56px */;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .portfolioContainer {
-    padding-left: 3rem /* 56px */;
-    padding-right: 3rem /* 56px */;
-    margin-left: 3rem;
-    margin-right: 3rem;
   }
 }
 
@@ -187,6 +173,28 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .portfolioContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .columnContainer h1 {
+    font-size: 0.9rem;
+  }
+
+  .columnContainer p {
+    font-size: 0.9rem /* 24px */;
+  }
+
+  .columnContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .h1_portfolio {
     font-size: 2rem /* 24px */;
@@ -203,38 +211,10 @@
   }
 }
 
-@media screen and (max-width: 550px) {
-  .columnContainer h1 {
-    font-size: 0.9rem;
-  }
-
-  .columnContainer p {
-    font-size: 0.9rem /* 24px */;
-  }
-
-  .portfolioContainer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 388px) {
-  .columnContainer h1 {
-    font-size: 1rem;
-  }
-
-  .columnContainer p {
-    font-size: 1rem /* 24px */;
-  }
-}
-
 @media screen and (max-width: 450px) {
-  .columnContainer h1 {
-    font-size: 1rem;
-  }
-
-  .columnContainer p {
-    font-size: 1rem /* 24px */;
+  .columnContainer {
+    padding-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -242,5 +222,22 @@
   .containerPortfolio {
     margin-right: 0rem;
     margin-left: 0rem;
+    margin-top: 5rem;
+  }
+
+  .portfolioContainer {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .columnContainer h1 {
+    font-size: 0.7rem;
+  }
+
+  .columnContainer p {
+    font-size: 0.7rem /* 24px */;
+  }
+
+  .p_portfolio {
+    padding-bottom: 0;
   }
 }

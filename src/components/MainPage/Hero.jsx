@@ -8,6 +8,8 @@ import {
   spokoj,
   format,
   github,
+  bank,
+  pole2,
 } from "../../constants/index.jsx";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -47,7 +49,7 @@ const Hero = () => {
           </div>
         </div>
         <div ref={float1} className="imgFloat">
-          <img src={behance} alt="image" className="imgFloatOne" />
+          <img src={bank} alt="image" className="imgFloatOne" />
 
           <img src={email} alt="image" className="imgFloatTwo" />
 
@@ -65,7 +67,7 @@ const Hero = () => {
         <div ref={float3} className="imgFloat">
           <img src={pole} alt="image" className="imgFloatSeven" />
 
-          <img src={pole} alt="image" className="imgFloatEight" />
+          <img src={pole2} alt="image" className="imgFloatEight" />
         </div>
       </div>
     </>

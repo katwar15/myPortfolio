@@ -8,9 +8,9 @@
 
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
-  padding-bottom: 80px;
+  margin-bottom: 8rem;
   padding-top: 8rem /* 192px */;
-  top: 8rem;
+  margin-top: 10rem;
   position: relative;
 }
 
@@ -31,7 +31,7 @@
 .gridExperience {
   display: grid;
 
-  grid-template-rows: 1fr 1fr 200px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 200px 100px 100px 100px 100px;
   grid-template-columns: 25% 25% 25% 25%;
 
   grid-template-areas:
@@ -427,7 +427,7 @@
 
 @media screen and (max-width: 350px) {
   .experienceDiv {
-    margin: 0;
+    margin-top: 5rem;
   }
 
   .gridExperience {

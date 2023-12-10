@@ -1,14 +1,13 @@
 .contactDiv {
   display: flex;
   flex-direction: column;
-
   padding-left: 3.5rem /* 56px */;
   padding-right: 3.5rem /* 56px */;
   margin-left: 3.5rem /* 56px */;
   margin-right: 3.5rem /* 56px */;
   padding-bottom: 80px;
   padding-top: 8rem /* 192px */;
-  top: 8rem;
+  margin-top: 10rem;
   position: relative;
   margin-bottom: 20rem;
   background-image: url("../../assets/backback.png");
@@ -125,6 +124,25 @@ textarea:focus {
   color: #ededed;
 }
 
+@media screen and (max-width: 1000px) {
+  .contactDiv {
+    padding-left: 4rem /* 56px */;
+    padding-right: 4rem /* 56px */;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactDiv {
+    padding-left: 2rem /* 56px */;
+    padding-right: 2rem /* 56px */;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .h1_Contact {
     margin-top: 0;
@@ -134,8 +152,10 @@ textarea:focus {
   .contactDiv {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-bottom: 5rem;
+    margin-bottom: 10rem;
   }
 
   .h1_experience {
@@ -159,10 +179,14 @@ textarea:focus {
 
   .input {
     width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 
   .textarea {
     width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -174,7 +198,7 @@ textarea:focus {
   .experienceDiv {
     padding-left: 1rem /* 56px */;
     padding-top: 1rem /* 40px */;
-    margin: 0;
+    margin-top: 5rem;
   }
 
   .gridExperience {
