@@ -1,11 +1,8 @@
-// import React from 'react';
-
 import "./Contact.css";
 import ForwardButton from "../ForwardButton/ForwardButton";
-
 import { sendEmail } from "./SendFile";
 import { useState } from "react";
-import { Toaster } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 function Contact() {
   const [details, setDetails] = useState({
@@ -17,16 +14,22 @@ function Contact() {
   const handleDetails = (e) => {
     const { name, value } = e.target;
 
-    setDetails((preventDetails) => {
+    setDetails((prevDetails) => {
       return {
-        ...preventDetails,
+        ...prevDetails,
         [name]: value,
       };
     });
   };
 
-  const handleSendEmail = () => {
-    sendEmail(details);
+  const handleSendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      await sendEmail(details);
+      toast.success("Email sent successfully!");
+    } catch (error) {
+      toast.error("Error sending email. Please try again.");
+    }
   };
 
   return (
@@ -38,7 +41,7 @@ function Contact() {
       <div className="contactDiv">
         <ForwardButton style={{ display: "flex", alignSelf: "flex-start" }} />
         <div className="contactFormContainer">
-          <h1 className="h1_experience">Contact me</h1>
+          <h1 className="h1_Contact">Contact me</h1>
           <p className="p_Contact">
             Please contact me directly at
             <a
@@ -48,10 +51,10 @@ function Contact() {
               {" "}
               natasza.warmuz@gmail.com
             </a>{" "}
-            or throught this form:
+            or through this form:
           </p>
         </div>
-        <form className="form" onSubmit={sendEmail}>
+        <form className="form" onSubmit={handleSendEmail}>
           <input
             className="input"
             type="email"
@@ -78,11 +81,7 @@ function Contact() {
             value={details.message}
             onChange={handleDetails}
           ></textarea>
-          <button
-            className="submitButton"
-            type="submit"
-            onClick={handleSendEmail}
-          >
+          <button className="submitButton" type="submit">
             Submit
           </button>
         </form>

@@ -1,7 +1,7 @@
 .containerHero {
-  margin-bottom: 40vh;
+  margin-bottom: 35vh;
+  margin-top: 15rem;
   position: relative;
-  top: 15vh;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -28,7 +28,7 @@
 }
 
 .h1Name {
-  font-size: 7rem;
+  font-size: 7vw;
   line-height: 0.8;
   color: rgba(21, 19, 17);
   text-align: center;
@@ -53,46 +53,68 @@
 }
 
 .imgFloatOne {
-  left: 75%;
+  left: 80%;
   top: 50%;
+  width: 20vw;
 }
 
 .imgFloatTwo {
   left: -2%;
   top: 55%;
+  width: 20vw;
 }
 
 .imgFloatThree {
   left: 35%;
   top: 0%;
+  width: 13vw;
 }
 
 .imgFloatFour {
   left: 0%;
   top: 10%;
+  width: 16vw;
 }
 
 .imgFloatFive {
   left: 80%;
   top: 15%;
+  width: 20vw;
 }
 
 .imgFloatSix {
   left: 45%;
   top: 66%;
+  width: 13vw;
 }
 
 .imgFloatSeven {
-  left: 65%;
+  left: 70%;
   top: 2.5%;
+  width: 14vw;
 }
 
 .imgFloatEight {
-  left: 15%;
+  left: 10%;
   top: 70%;
+  width: 18vw;
 }
 
 /* BREAKPOINTS */
+
+@media screen and (max-width: 1100px) {
+  .containerHero {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .containerHero {
+    margin-top: 7rem;
+    margin-bottom: 0rem;
+  }
+}
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
@@ -100,7 +122,6 @@
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;
     margin: 0;
-
     padding-top: 1rem /* 40px */;
   }
 
@@ -134,15 +155,111 @@
   .video {
     top: 15vh;
   }
+
+  .imgFloatOne {
+    width: 30vw;
+    left: 70%;
+    top: 50%;
+  }
+
+  .imgFloatTwo {
+    width: 25vw;
+    top: 58%;
+    left: 5%;
+  }
+
+  .imgFloatThree {
+    width: 30vw;
+    top: 0%;
+  }
+
+  .imgFloatFour {
+    width: 23vw;
+  }
+
+  .imgFloatFive {
+    width: 20vw;
+  }
+
+  .imgFloatSix {
+    width: 21vw;
+    top: 73%;
+  }
+
+  .imgFloatSeven {
+    width: 18vw;
+  }
+
+  .imgFloatEight {
+    width: 18vw;
+    top: 58%;
+    left: 20%;
+  }
+
+  .containerHero {
+    margin-bottom: 7vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .containerHero {
+    margin-bottom: 10vh;
+  }
+  .containerName {
+    top: 33%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 /* for small devices */
 
+@media screen and (max-width: 380px) {
+  .containerHero {
+    margin-bottom: 0vh;
+    margin-top: 3rem;
+  }
+  .imgFloatOne {
+    width: 30vw;
+  }
+
+  .imgFloatTwo {
+    width: 30vw;
+    left: 10%;
+  }
+
+  .imgFloatThree {
+    width: 35vw;
+  }
+
+  .imgFloatFour {
+    width: 30vw;
+  }
+
+  .imgFloatFive {
+    width: 30vw;
+  }
+
+  .imgFloatSix {
+    display: none;
+  }
+
+  .imgFloatSeven {
+    width: 30vw;
+  }
+
+  .imgFloatEight {
+    width: 35vw;
+    top: 68%;
+    left: 20%;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .containerName {
-    padding-left: 1rem /* 56px */;
-    padding-top: 1rem /* 40px */;
+    padding-top: 0rem /* 40px */;
     margin: 0;
+    top: 35%;
   }
 
   .containerRole {
@@ -156,7 +273,11 @@
   }
 
   .h1Name {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+  }
+
+  .h2Role {
+    font-size: 1rem;
   }
 
   .h2Outline {
@@ -171,5 +292,40 @@
   }
   .video {
     top: 10vh;
+  }
+
+  .imgFloatOne {
+    top: 48%;
+    left: 70%;
+  }
+
+  .imgFloatTwo {
+    left: 2%;
+    top: 52%;
+    width: 35vw;
+  }
+
+  .imgFloatThree {
+    width: 35vw;
+    left: 24%;
+    top: 0%;
+  }
+
+  .imgFloatFour {
+    width: 34vw;
+    left: -3%;
+  }
+
+  .imgFloatFive {
+    top: 5%;
+  }
+
+  .imgFloatSeven {
+    top: 13%;
+    left: 65%;
+  }
+
+  .imgFloatEight {
+    top: 62%;
   }
 }

@@ -10,7 +10,7 @@
   padding-top: 8rem /* 192px */;
   top: 8rem;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
   background-image: url("../../assets/backback.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -29,14 +29,15 @@
 .h1_Contact {
   font-size: 3rem /* 24px */;
   color: rgba(21, 19, 17);
-  padding-bottom: 1.25rem /* 20px */;
+  margin-top: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .p_Contact {
   color: rgba(21, 19, 17);
   font-size: 1.25rem /* 24px */;
   line-height: 2rem /* 32px */;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 3px;
 }
 
@@ -44,11 +45,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 3.5rem /* 56px */;
-  padding-right: 3.5rem /* 56px */;
+
   top: 0;
-  width: 100%;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .input {
@@ -127,6 +126,11 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .h1_Contact {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
   .contactDiv {
     padding-left: 2rem /* 56px */;
     padding-right: 2rem /* 56px */;

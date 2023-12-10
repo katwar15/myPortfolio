@@ -10,7 +10,7 @@ const MovieClipOne = () => {
 
   useEffect(() => {
     window
-      .matchMedia("(min-width: 768px)")
+      .matchMedia("(min-width: 600px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
@@ -20,14 +20,14 @@ const MovieClipOne = () => {
         <HoverVideoPlayer
           loop={true}
           videoSrc={clipOne}
-          style={{ height: "199px", display: "flex", width: "100%" }}
+          style={{ height: "100%", display: "flex", width: "100%" }}
         ></HoverVideoPlayer>
       )}
       {!matches && (
         <HoverVideoPlayer
           loop={true}
           videoSrc={clipOne}
-          style={{ height: "160px", display: "flex", width: "100%" }}
+          style={{ height: "100%", display: "flex", width: "100%" }}
         ></HoverVideoPlayer>
       )}
     </>

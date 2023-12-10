@@ -29,15 +29,15 @@ function Job() {
         <Link to="/experience" className="forward_button">
           <img className="forward_img" src={forward_button}></img>
         </Link>
+        <h1 className="h1Job">{titleJob}</h1>
         <div className="jobEsenContainer">
           <div className="jobEsen">
-            <h1 className="h1Job">{titleJob}</h1>
-            <h2 className="h2Years">{years}</h2>
+            <h2 className="h3Job">{years}</h2>
             <h2 className="h3Job">{company}</h2>
             <p className="pJobEsen">{entranceDis}</p>
           </div>
           <div className="jobTool">
-            <h2 className="h2JobEsen">toolbox:</h2>
+            <h2 className="h2Job">toolbox:</h2>
             <ul className="listTools">
               <il className="tool">{tool1}</il>
               <il className="tool">{tool2}</il>
@@ -48,8 +48,9 @@ function Job() {
             </ul>
           </div>
         </div>
-
-        <img className="imageJob" src={mainImg}></img>
+      </div>
+      <img className="imageJob" src={mainImg}></img>
+      <div className="containerJobSecond">
         <h2 className="h2Job">Job description:</h2>
 
         <p className="pJob">{jobDescription}</p>

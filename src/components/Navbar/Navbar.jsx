@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import { mainLinks } from "../../constants/index.jsx";
 import { useState } from "react";
 import "./Navbar.css";
-import { BiMenu, BiX } from "react-icons/bi";
+import { TfiClose } from "react-icons/tfi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   const [toggle, showMenu] = useState(false);
@@ -33,11 +34,11 @@ const Navbar = () => {
             ))}
           </ul>
           <i className="nav_close" onClick={() => showMenu(!toggle)}>
-            <BiX />
+            <TfiClose />
           </i>
         </div>
         <div className="nav_toggle" onClick={() => showMenu(!toggle)}>
-          <BiMenu />
+          <RxHamburgerMenu />
         </div>
       </nav>
     </header>

@@ -20,6 +20,14 @@ const MarqueeComponent = () => {
       paddingTop: isPaddingOk ? "4rem" : "2rem",
       paddingBottom: isPaddingOk ? "4rem" : "2rem",
     }),
+    h2Container: (isPaddingOk) => ({
+      fontSize: isPaddingOk ? "1.8rem" : "1.3rem",
+      fontFamily: "KonstantGrotesk",
+      paddingLeft: "1rem",
+      paddingRight: "1rem",
+      color: "#151311",
+      alignSelf: "center",
+    }),
   };
 
   return (
@@ -47,14 +55,7 @@ const MarqueeComponent = () => {
                   <>
                     <h2
                       key={e.id["skills"]}
-                      style={{
-                        fontFamily: "KonstantGrotesk",
-
-                        paddingLeft: "1rem",
-                        paddingRight: "1rem",
-                        color: "#151311",
-                        alignSelf: "center",
-                      }}
+                      style={styl.h2Container(isPaddingOk)}
                     >
                       {e.title}
                     </h2>
@@ -72,10 +73,7 @@ const MarqueeComponent = () => {
                   <>
                     <h2
                       key={e.id["soft-skill"]}
-                      style={{
-                        fontFamily: "HelveticaNeueRegular",
-                        color: "#151311",
-                      }}
+                      style={styl.h2Container(isPaddingOk)}
                     >
                       {e.title}
                     </h2>
@@ -106,23 +104,14 @@ const MarqueeComponent = () => {
                 index % 2 === 0 ? (
                   <h2
                     key={e.id["skills"]}
-                    style={{
-                      fontFamily: "KonstantGrotesk",
-
-                      paddingLeft: "3rem",
-                      paddingRight: "3rem",
-                      color: "#151311",
-                    }}
+                    style={styl.h2Container(isPaddingOk)}
                   >
                     {e.title}
                   </h2>
                 ) : (
                   <h2
                     key={e.id["soft-skill"]}
-                    style={{
-                      fontFamily: "HelveticaNeueRegular",
-                      color: "#151311",
-                    }}
+                    style={styl.h2Container(isPaddingOk)}
                   >
                     {e.title}
                   </h2>
@@ -156,14 +145,7 @@ const MarqueeComponent = () => {
                   <>
                     <h2
                       key={e.id["skills"]}
-                      style={{
-                        fontFamily: "KonstantGrotesk",
-
-                        paddingLeft: "1rem",
-                        paddingRight: "1rem",
-                        color: "#151311",
-                        alignSelf: "center",
-                      }}
+                      style={styl.h2Container(isPaddingOk)}
                     >
                       {e.title}
                     </h2>
@@ -181,11 +163,7 @@ const MarqueeComponent = () => {
                   <>
                     <h2
                       key={e.id["soft-skill"]}
-                      style={{
-                        fontFamily: "HelveticaNeueRegular",
-
-                        color: "#151311",
-                      }}
+                      style={styl.h2Container(isPaddingOk)}
                     >
                       {e.title}
                     </h2>
@@ -216,24 +194,14 @@ const MarqueeComponent = () => {
                 index % 2 === 0 ? (
                   <h2
                     key={e.id["skills"]}
-                    style={{
-                      fontFamily: "KonstantGrotesk",
-
-                      paddingLeft: "3rem",
-                      paddingRight: "3rem",
-                      color: "#151311",
-                    }}
+                    style={styl.h2Container(isPaddingOk)}
                   >
                     {e.title}
                   </h2>
                 ) : (
                   <h2
                     key={e.id["soft-skill"]}
-                    style={{
-                      fontFamily: "HelveticaNeueRegular",
-
-                      color: "#151311",
-                    }}
+                    style={styl.h2Container(isPaddingOk)}
                   >
                     {e.title}
                   </h2>

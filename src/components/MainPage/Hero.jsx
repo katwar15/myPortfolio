@@ -47,25 +47,25 @@ const Hero = () => {
           </div>
         </div>
         <div ref={float1} className="imgFloat">
-          <img src={behance} alt="image" width={380} className="imgFloatOne" />
+          <img src={behance} alt="image" className="imgFloatOne" />
 
-          <img src={email} alt="image" width={300} className="imgFloatTwo" />
+          <img src={email} alt="image" className="imgFloatTwo" />
 
-          <img src={spokoj} alt="image" width={250} className="imgFloatThree" />
+          <img src={spokoj} alt="image" className="imgFloatThree" />
         </div>
 
         <div ref={float2} className="imgFloat">
-          <img src={format} alt="image" width={280} className="imgFloatFour" />
+          <img src={format} alt="image" className="imgFloatFour" />
 
-          <img src={github} alt="image" width={325} className="imgFloatFive" />
+          <img src={github} alt="image" className="imgFloatFive" />
 
-          <img src={behance} alt="image" width={250} className="imgFloatSix" />
+          <img src={behance} alt="image" className="imgFloatSix" />
         </div>
 
         <div ref={float3} className="imgFloat">
-          <img src={pole} alt="image" width={200} className="imgFloatSeven" />
+          <img src={pole} alt="image" className="imgFloatSeven" />
 
-          <img src={pole} alt="image" width={230} className="imgFloatEight" />
+          <img src={pole} alt="image" className="imgFloatEight" />
         </div>
       </div>
     </>

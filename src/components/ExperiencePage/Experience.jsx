@@ -8,6 +8,8 @@ import MovieClipFour from "../MovieClips/MovieClipFour";
 import "./Experience.css";
 import pole from "/src/assets/pole.png";
 import email from "/src/assets/email.png";
+import dyplomy from "/src/assets/dyplomy.png";
+
 import ForwardButton from "../ForwardButton/ForwardButton";
 
 import ulotka from "/src/assets/ulotka.jpg";
@@ -183,7 +185,7 @@ function Experience() {
                 "I dealt with everyone - customer service, arranging appointments, ordering equipment and supplies, bills and taxes. My side job was working as a nail styling instructor and participating in international championships. It was thanks to participating in competitions that I realized that I missed creating art. In my works, I was inspired by fashion, art and botany. I also often used histology or mycology textbooks. My clients appreciated my sense of aesthetics, but also my imagination, which went beyond average nail salons.",
               mainImg: `${pazy}`,
               mainImgOne: `${ulotka}`,
-              mainImgTwo: `${plakat}`,
+              mainImgTwo: `${dyplomy}`,
               mainImgThree: `${plakat}`,
               tool1: "multitasking",
               tool2: "creativity",

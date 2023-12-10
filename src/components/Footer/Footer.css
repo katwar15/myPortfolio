@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.h1_Contact {
+.h1_ContactFooter {
   color: #ededed;
   font-size: 2rem;
   padding-top: 3rem;
@@ -201,6 +201,12 @@
 }
 
 @media screen and (max-width: 350px) {
+  .h1_ContactFooter {
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
   .h1_Contact {
     padding-top: 1.8rem;
     padding-bottom: 0.3rem;

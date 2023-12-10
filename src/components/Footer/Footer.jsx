@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <div className="containerContact">
-        <h1 className="h1_Contact">Contact</h1>
+        <h1 className="h1_ContactFooter">Contact</h1>
         <footer className="gridFooter">
           <div id="iconT">
             <a href="mailto:natasza.warmuz@gmail.com">

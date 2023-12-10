@@ -48,7 +48,7 @@
   width: 100%;
   margin-top: 8rem /* 56px */;
 
-  margin-bottom: 10vh;
+  margin-bottom: 30vh;
 
   border-top: 1px solid rgb(21, 19, 17);
 }
@@ -388,25 +388,52 @@
 
 /* Arro display */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  #item-0,
+  #item-3,
+  #item-4,
+  #item-5,
+  #item-8,
+  #item-9 {
+    height: 160px;
+  }
+
+  #item-1,
+  #item-2,
+  #item-6,
+  #item-7,
+  #item-10,
+  #item-11 {
+    height: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .arrow {
-    display: none;
+    width: 80px;
   }
 }
 
 /* for small devices */
 
+@media screen and (max-width: 488px) {
+  .h1_Grid {
+    font-size: 0.8rem;
+  }
+  .arrow {
+    width: 70px;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .experienceDiv {
-    padding-left: 1rem /* 56px */;
-    padding-top: 1rem /* 40px */;
     margin: 0;
   }
 
   .gridExperience {
     display: grid;
 
-    grid-template-rows: 1fr 1fr 180px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 160px 1fr 1fr 1fr 1fr;
     grid-template-columns: 25% 25% 25% 25%;
     margin-bottom: 10vh;
   }
@@ -420,13 +447,13 @@
   .p_experience {
     font-size: 1rem /* 24px */;
     line-height: 2rem /* 32px */;
-    padding-bottom: 4rem /* 56px */;
+    padding-bottom: 0rem /* 56px */;
     text-align: justify;
     letter-spacing: 3px;
   }
 
   .h1_Grid {
-    font-size: 1rem;
+    font-size: 0.6rem;
     letter-spacing: 3px;
     justify-self: start;
     transition: all 0.4s;
@@ -438,7 +465,7 @@
   #item-5,
   #item-8,
   #item-9 {
-    height: 180px;
+    height: 160px;
   }
 
   #item-1,
@@ -447,6 +474,10 @@
   #item-7,
   #item-10,
   #item-11 {
-    height: 90px;
+    height: 80px;
+  }
+
+  .arrow {
+    width: 60px;
   }
 }
